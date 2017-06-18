@@ -67,7 +67,7 @@ PÁGINA: PORTAFOLIO
   float: left;
   width: 45%;
   margin: 2.5%;
-  background-color: #6E6E6E;
+  background-color: #2E2E2E;
   color: #bdc3c7;
 }
 
@@ -76,8 +76,16 @@ PÁGINA: PORTAFOLIO
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
+  color: #4bad92;
+}
+
+#gallery li a .parrafo_informacion{
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
   color: #E0F8EC;
 }
+
 
 #gallery li a .habilidades{
   padding: 0;
@@ -94,6 +102,24 @@ PÁGINA: PORTAFOLIO
   border-radius: 40%;
 
 }
+
+/* cambio de tamaño para las habilidades mas grandes
+
+  cambiar el de comunicación en ilustraciones
+*/
+#gallery li a ul .habilidad_larga{
+  display:inline-block;
+  background-color: #0F6A62;
+  color: #fff;
+  padding: 0.5em;
+  text-transform: uppercase;
+  width: 6em;
+  border-radius: 40%;
+  font-size: 0.55em;
+  text-align: center;
+
+}
+
 
 /**************************
 PÁGINA: ACERCA DE
