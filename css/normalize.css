@@ -278,6 +278,9 @@ optgroup {
 button,
 input { /* 1 */
   overflow: visible;
+  float: left;
+  clear: left;
+
 }
 
 /**

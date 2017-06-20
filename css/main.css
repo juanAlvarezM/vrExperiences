@@ -238,6 +238,8 @@ CONTACT FORM
 
 .form-control {
   margin: 5px 0;
+  clear: left;
+  float: left;
 }
 
 form textarea {
