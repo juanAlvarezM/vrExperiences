@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vrExperienceStudio </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ 	  <script type="text/javascript" src="js/jquery.interactive_3d.js"></script>
+ 	<script>
+	  $(document).ready( function() {
+	    $("#rostro").interactive_3d({
+	      frames: 90
+
+	    });
+	  });    	
+	</script>
+
+  <script>
+    $(document).ready( function() {
+      $("#controlwii").interactive_3d({
+        frames: 90
+
+      });
+    });     
+  </script>
+  
+    
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>VR-ExperienceStudio</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="portafolio.html" class="selected">Portafolio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <section>
+        <ul id="gallery">
+          <li id="rostro">                    
+              <img src="archivos_portafolio/rostro3d/rostro_1.jpg"  class="main-frame">              
+              <p class="titulo_trabajo"> Rostro 3D </p>
+              <p class="parrafo_informacion">Este trabajo fue desarrollado en la clase de Fundamentos de arte 3D, en ingenieria en diseño de entretenimiento digital. Para este proyecto de posicionó un rostro con vistas lateral y frontal para tratar de copiar el rostro dentro de un programa de modelamiento 3d. El programa que se utilizó para este trabajo fue blender.</p>
+              <a href="archivos_portafolio/rostro3d/rostro 3d.blend" target="_blank" class="titulo_trabajo">''CLICK AQUÍ PARA DESCARGAR''</a>    
+              <p> <!-- Esto es un espacio --></p>
+          </li>   
+          <li id="controlwii">                    
+              <img src="archivos_portafolio/controlwii/controlwii_1.jpg"  class="main-frame">              
+              <p class="titulo_trabajo"> Control de Wii </p>
+              <p class="parrafo_informacion">Este trabajo fue desarrollado en la clase de Fundamentos de arte 3D, en ingenieria en diseño de entretenimiento digital. Para este proyecto se utilizó una imagen con todas las vistas del control, modelando por aparte su base y sus botones para poder lograr una buena visualización dentro de un programa de modelamiento 3d. El programa que se utilizó para este trabajo fue blender.</p>
+              <a href="archivos_portafolio/controlwii/control_de_wii.blend" target="_blank" class="titulo_trabajo">''CLICK AQUÍ PARA DESCARGAR''</a>    
+              <p> <!-- Esto es un espacio --></p>
+          </li>  
+          <li id="videos">                    
+              <iframe height="100%" width="100%" src="https://www.youtube.com/embed/h5Mhu8IsEHU?loop=1" frameborder="0" allowfullscreen></iframe>              
+              <p class="titulo_trabajo"> Nave </p>
+              <p class="parrafo_informacion">Este trabajo fue desarrollado en la clase de Fundamentos de arte 3D, en ingenieria en diseño de entretenimiento digital. Para este proyecto no se utilizó ningún modelo antes diseñado, fue creado completamente desde cero con su respectiva textura. El programa que se utilizó para este trabajo fue blender.</p>
+              <p class="titulo_trabajo"> "CLICK EN LA PANTALLA DEL VIDEO PARA REPRODUCIR" &uarr;</p>
+              <p> <!-- Esto es un espacio --></p>
+          </li>  
+          <li id="videos">                    
+              <iframe height="100%" width="100%" src="https://www.youtube.com/embed/s6tyhVVS9Aw?loop=1" frameborder="0" allowfullscreen></iframe>              
+              <p class="titulo_trabajo"> Lipsynd y acting </p>
+              <p class="parrafo_informacion">Este trabajo fue desarrollado en la clase de Animación 3D, en ingenieria en diseño de entretenimiento digital. Para este proyecto se utilizó un modelo 3d ya realizado, al cual se le colocó un audio y se animo de acuerdo a este. El programa que se utilizó para este trabajo fue blender.</p>
+              <p class="titulo_trabajo"> "CLICK EN LA PANTALLA DEL VIDEO PARA REPRODUCIR" &uarr;</p>
+              <p> <!-- Esto es un espacio --></p>
+          </li>     
+          <li id="videos">                    
+              <iframe height="100%" width="100%" src="https://www.youtube.com/embed/Q_RhQEWJkPQ?loop=1" frameborder="0" allowfullscreen></iframe>              
+              <p class="titulo_trabajo"> Mecanicas avanzadas - Salto de valla </p>
+              <p class="parrafo_informacion">Este trabajo fue desarrollado en la clase de Animación 3D, en ingenieria en diseño de entretenimiento digital. Para este proyecto se utilizó un modelo 3d ya realizado, en papel se dibujaron los frames mas importantes y se le agregaron al modelo. Se animó desde cero. El programa que se utilizó para este trabajo fue blender.</p>
+              <p class="titulo_trabajo"> "CLICK EN LA PANTALLA DEL VIDEO PARA REPRODUCIR" &uarr;</p>
+              <p> <!-- Esto es un espacio --></p>
+          </li>
+         
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <a href="https://twitter.com/vr_Experiences1">
+        <img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://www.facebook.com/vrExperienceStudio/">
+        <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      </a>
+      <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A">
+        <img src="img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
+      </a>
+      <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa</p>
+    </footer>
+  </body>
+</html>

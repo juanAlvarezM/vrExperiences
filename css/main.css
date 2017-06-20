@@ -87,6 +87,8 @@ PÁGINA: PORTAFOLIO
 }
 
 
+
+
 #gallery li a .habilidades{
   padding: 0;
 }
@@ -101,6 +103,22 @@ PÁGINA: PORTAFOLIO
   width: 4em;
   border-radius: 40%;
 
+}
+
+/*Para lo que acompaña nuestras imagenes 3d*/
+
+#gallery li .parrafo_informacion{
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #E0F8EC;
+}
+
+#gallery li .titulo_trabajo { 
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #4bad92;
 }
 
 /* cambio de tamaño para las habilidades mas grandes
@@ -119,6 +137,7 @@ PÁGINA: PORTAFOLIO
   text-align: center;
 
 }
+
 
 
 /**************************
@@ -238,5 +257,4 @@ nav a, nav a:visited {
 nav a.selected, a:hover {
   color: #4bad92;
 }
-
 
