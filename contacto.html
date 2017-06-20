@@ -39,6 +39,7 @@
         </ul>
       </section>
       <section>
+      <!--
         <form id="contactForm" method="post" action="php/contact-form.php">
           <div>
             <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required />
@@ -56,6 +57,25 @@
             <input type="submit" class="form-send" value="Enviar">
           </div>
         </form>
+        -->
+        <form id="contactForm" action="https://formspree.io/vrExperienceStudio@gmail.com" method="POST">
+            <div>
+            <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required />
+          </div>          
+          <div>
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+          </div>        
+          <div>
+            <input class="form-control" id="subject" type="text" name="subject" placeholder="Asunto" required>
+          </div>
+          <div>
+            <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+          </div>
+          <div>
+            <input type="submit" class="form-send" value="Enviar">
+          </div>
+        </form>
+
       </section>
       <footer>
       <a href="https://twitter.com/vr_Experiences1">
