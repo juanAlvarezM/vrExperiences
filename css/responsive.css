@@ -25,7 +25,8 @@
     width: 28.3333%
   }
 
-  #gallery li:nth-child(4n) {
+
+  #gallery li:nth-child(3n) {
     clear: left;
   }
 
@@ -76,4 +77,18 @@
     border-bottom: 5px solid #4bad92;
     margin-bottom: 60px;
   }
+
+  #gallery li:nth-child(3n) {
+    clear: right;
+  }
+  #gallery li:nth-child(4) {
+    clear: left;
+  }
+  #gallery li:nth-child(7n) {
+    clear: left;
+  }
+  #gallery li:nth-child(10) {
+    clear: left;
+  }
+
 }

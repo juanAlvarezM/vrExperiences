@@ -105,6 +105,7 @@ PÁGINA: PORTAFOLIO
 
 }
 
+
 /*Para lo que acompaña nuestras imagenes 3d*/
 
 #gallery li .parrafo_informacion{
@@ -118,6 +119,12 @@ PÁGINA: PORTAFOLIO
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
+  color: #4bad92;
+}
+#gallery li .titulo_trabajo2 { 
+  margin: 0;
+  padding: 5%;
+  font-size: 1em;
   color: #4bad92;
 }
 
