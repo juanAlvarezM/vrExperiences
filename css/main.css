@@ -52,6 +52,28 @@ h1 {
   line-height: 0.8em;
   color: #fff;
 }
+/**************************
+Inicio
+***************************/
+
+#texto_inicio  {
+  padding-top: 10em;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.225em;
+  margin: 0 0 1em 0;
+
+}
+
+#texto_inicio p{
+  color: #4bad92;
+  margin: 0 0 2em 0;
+  font-size: 100%;
+  text-align: center;
+}
+
 
 /**************************
 PÁGINA: PORTAFOLIO
@@ -152,6 +174,12 @@ PÁGINA: ACERCA DE
 ***************************/
 
 .profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+.profile-logo {
   display: block;
   max-width: 150px;
   margin: 0 auto 30px;
@@ -267,3 +295,6 @@ nav a.selected, a:hover {
   color: #4bad92;
 }
 
+header .selected{
+  color: #4bad92;
+}

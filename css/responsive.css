@@ -14,7 +14,7 @@
     float: right;
   }
 
-  
+
 
   /**************************
   PÁGINA: PORTAFOLIO
@@ -29,15 +29,17 @@
   #gallery li:nth-child(3n) {
     clear: left;
   }
-   #gallery li:nth-child(3) {
-    clear: left;
-  }
+  
 
   /**************************
   PÁGINA: ACERCA DE
   ***************************/
 
   .profile-photo {
+    float: left;
+    margin: 0 5% 120px 0;
+  }
+  .profile-logo {
     float: left;
     margin: 0 5% 120px 0;
   }
