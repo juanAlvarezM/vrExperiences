@@ -29,6 +29,9 @@
   #gallery li:nth-child(3n) {
     clear: left;
   }
+   #gallery li:nth-child(3) {
+    clear: left;
+  }
 
   /**************************
   PÁGINA: ACERCA DE
