@@ -298,3 +298,46 @@ nav a.selected, a:hover {
 header .selected{
   color: #4bad92;
 }
+
+
+/***********************************************
+PÁGINA: con texto largo y descripción proyectos
+***********************************************/
+
+#parrafo_descripción li {
+  float: left;
+  width: 80%;
+  margin: 2.5%;
+  background-color: #2E2E2E;
+  color: #bdc3c7;
+  list-style:none
+}
+
+/*titulo de la galeria */
+.titulo_trabajo { 
+  margin: 0;
+  padding: 5%;
+  padding-bottom: 15px;
+  font-size: 1.2em;
+  color: #4bad92;
+}
+
+.parrafo_informacion{
+  margin: 0;
+  padding: 5%;
+  font-size: 0.9em;
+  color: #E0F8EC;
+}
+.load_images {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 0%;
+}
+
+.load_images2 {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto 30px;
+  border-radius: 0%;
+}

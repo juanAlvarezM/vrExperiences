@@ -44,7 +44,12 @@
     margin: 0 5% 120px 0;
   }
 
-  
+  .load_images2 {
+  display: block;
+  max-width: 75%;
+  margin: 0 auto 30px;
+  border-radius: 0%;
+}
 
 }
 
@@ -95,5 +100,42 @@
   #gallery li:nth-child(10) {
     clear: left;
   }
+/**************************
+PÁGINA: con texto largo y descripción proyectos
+***************************/
+#parrafo_descripción li {
+    /* 15% margin 85% elementos / 3 = 28.333 */
+    width: 28.3333%
+  }
+#parrafo_descripción li {
+  float: left;
+  width: 85%;
+  margin: 2.5%;
+  background-color: #2E2E2E;
+  color: #bdc3c7;
+}
+.titulo_trabajo { 
+  margin: 0;
+  padding: 5%;
+  padding-bottom: 15px;
+  font-size: 1.2em;
+  color: #4bad92;
+}
+
+.parrafo_informacion{
+  margin: 0;
+  padding: 5%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 0.9em;
+  color: #E0F8EC;
+}
+ .load_images2 {
+  display: block;
+  max-width: 65%;
+  margin: 0 auto 30px;
+  border-radius: 0%;
+}
+
 
 }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vrExperienceStudio </title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html" id="logo">
+        <h1>VR-ExperienceStudio</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../portafolio.html" class="selected">Portafolio</a></li>
+          <li><a href="../../acerca.html">Acerca de</a></li>
+          <li><a href="../../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <section>
+        <ul id="parrafo_descripción">
+          <li>
+              <img src="images/project_01.png" alt="project_0" class="load_images">
+              <p class="titulo_trabajo"> Project 0: Getting Started </p>
+              <p class="parrafo_informacion">Todo este proyecto se se realizó en base a<a href="http://www.nand2tetris.org/"> nand2teris</a></p>
+              <p class="parrafo_informacion">Puedes descargar la carpeta con los resultados finales de esta parte del proyecto <a href="carpetas_archivos/project01.rar" target="_blank"> dando click aquí</a>.</p>
+
+              <p class="titulo_trabajo"> NAND </p>
+              <P class="parrafo_informacion" >Tabla de verdad del NAND y su visualización grafica</P>
+              <img src="images/project_01/grafico/NAND.jpeg" class="load_images2">
+
+              <p class="titulo_trabajo"> NOT </p>
+              <p class="parrafo_informacion" >Observando un poco la tabla de verdad del NOT podremos darnos cuenta de que solo hay un dato como entrada y otro único dato como salida. Como tenemos que utilizar la compuerta NAND para la implementación de esta compuerta lo más sencillo es distribuir la única entrada que tenemos en el NOT en las entradas de la compuerta NAND para así obtener una única salida. </p>
+              <P class="parrafo_informacion" > Tabla de verdad del NOT y su visualización grafica</P>
+              <img src="images/project_01/grafico/NOT.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/NOT.jpeg" class="load_images2">
+
+              <p class="titulo_trabajo"> AND </p>
+              <p class="parrafo_informacion" >Para poder armar esta compuerta lógica debemos observar y darnos cuenta de que las salidas de la compuerta AND son totalmente opuestas a las del NAND, así que lo único que tendríamos que hacer es negar la salida de un NAND para así obtener nuestro AND.</p>
+              <P class="parrafo_informacion" >Tabla de verdad del AND</P>
+              <img src="images/project_01/tablas_verdad/AND.jpg" class="load_images2">
+              <P class="parrafo_informacion" >Visualización grafica del AND</P>
+              <img src="images/project_01/grafico/AND.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/AND.jpeg" class="load_images2">
+
+              <p class="titulo_trabajo"> OR </p>
+              <P class="parrafo_informacion" > Al observar muy bien la tabla de verdad de la compuerta OR podremos darnos cuenta de que la salida de esta solo es cero cuando las dos entradas son cero. Ahora, si observamos la tabla de la compuerta NAND podremos percibir que necesitamos obtener un valor negado de cuando sus entradas son la misma, para poder obtener un OR. Para esto podemos usar dos compuertas NAND que reciban el mismo valor de entrada, lo que nos proporcionará dos valores de salida y pasándolas por otra puerta NAND podemos obtener el resultado esperado. </P>
+              <P class="parrafo_informacion" >Tabla de verdad del OR </P>
+              <img src="images/project_01/tablas_verdad/OR.jpg" class="load_images2">
+              <P class="parrafo_informacion" >Visualización grafica del OR </P>
+              <img src="images/project_01/grafico/OR.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>
+              <img src="images/project_01/codigo/OR.jpeg" class="load_images2">  
+              
+              <p class="titulo_trabajo"> XOR </p>
+              <P class="parrafo_informacion" > En este caso lo que debemos obtener es que cada una de nuestras entradas llegan en primera instancia a una compuerta NAND y a una compuerta OR, de estas dos compuertas obtendremos dos salidas que no pondremos utilizar aun por lo que debemos conectar estas dos salidas a una compuerta AND, quien se encargará de multiplicar los valores que en esta entren y nos entregará una salida correspondiente a la compuerta XOR.</P>
+              <P class="parrafo_informacion" >Tabla de verdad del XOR</P>
+              <img src="images/project_01/tablas_verdad/XOR.jpg" class="load_images2">
+              <P class="parrafo_informacion" >Visualización grafica del XOR</P>
+              <img src="images/project_01/grafico/XOR.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P> 
+              <img src="images/project_01/codigo/XOR.jpeg" class="load_images2"> 
+
+              <p class="titulo_trabajo"> MUX </p>
+              <P class="parrafo_informacion" >Ahora nos enfrentamos a algo completamente diferente, ahora a partir de las entradas que ingresaban anteriormente a nuestras compuertas, el multiplexor cuenta con un selector que lo que hace es que dependiendo de su estado nos dará una salida con el valor de una entrada o el de la otra.</P>
+              <P class="parrafo_informacion" >Tabla de verdad del MUX</P>
+              <img src="images/project_01/tablas_verdad/MUX.jpg" class="load_images2">
+              <P class="parrafo_informacion" >Visualización grafica del MUX</P>
+              <P class="parrafo_informacion" >En esta imagen podremos darnos cuenta de como se aplicó el método para crear funciones booleanas, lo que facilitó enormemente haber llegado a esta solución.</P>
+              <img src="images/project_01/grafico/MUX.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P> 
+              <img src="images/project_01/codigo/MUX.jpeg" class="load_images2"> 
+
+              <p class="titulo_trabajo"> DMUX </p>
+              <P class="parrafo_informacion" > El DMUX lo que hace es que cuenta también con un selector lo que le permite escoger de acuerdo con su estado por cuál de sus dos salidas se obtiene la señal. Lo que se hizo acá fue que se conectó la entrada en dos compuertas AND y de igual manera se hizo lo mismo con el selector pero cuidando que una de estas señales es negada. </P>
+              <P class="parrafo_informacion" >Tabla de verdad del DMUX</P>
+              <img src="images/project_01/tablas_verdad/DMUX.jpg" class="load_images2">
+              <P class="parrafo_informacion" >Visualización grafica del DMUX</P>
+              <img src="images/project_01/grafico/DMUX.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/DMUX.jpeg" class="load_images2">
+
+              <p class="titulo_trabajo"> NOT16 </p>
+              <P class="parrafo_informacion" > El NOT16 simplemente es un NOT que no recibe únicamente un dato y genera otro, sino que ahora recibe un bus 16 datos y genera un bus 16. Para esto lo que hacemos es que conectamos 16 NOT cada uno a uno de los 16 datos que están entrando así obtener la misma cantidad de valores a la salida.</P>
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/NOT16.JPG" class="load_images2">
+              
+              <p class="titulo_trabajo"> AND16 </p>
+              <P class="parrafo_informacion" >En esta compuerta pasa de una manera similar a lo que pasa con el NOT16, así que no necesitaré repetir la misma explicación de nuevo.</P>
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/AND16.JPG" class="load_images2">
+
+
+              <p class="titulo_trabajo"> OR16 </p>
+              <P class="parrafo_informacion" >En esta compuerta pasa de una manera similar a lo que pasa con el NOT16 y el AND16, así que no necesitaré repetir la misma explicación de nuevo.</P> 
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/OR16.JPG" class="load_images2">
+              
+              <p class="titulo_trabajo"> MUX16 </p>
+              <P class="parrafo_informacion" >En esta compuerta pasa de una manera similar a lo que pasa con el NOT16, el AND16 y el OR16, así que no necesitaré repetir la misma explicación de nuevo.</P>  
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_01/codigo/MUX16.jpg" class="load_images2">
+
+              <p class="titulo_trabajo"> OR8WAY </p>
+              <P class="parrafo_informacion" >Para realizar esta compuerta lógica utilicé únicamente compuertas OR, en total fueron 7 compuertas, 4 principalmente para conectar a cada uno de las 8 señales de la entrada, luego otros 2 para conectar las 4 salidas del proceso anterior y por ultimo otra compuerta para lograr obtener una única salida.</P>
+              <P class="parrafo_informacion" >Visualización grafica del OR8WAY</P>
+              <img src="images/project_01/grafico/OR8WAY.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>              
+              <img src="images/project_01/codigo/OR8WAY.jpeg" class="load_images2">
+
+              
+              <p class="titulo_trabajo"> MUX4WAY16 </p>
+              <P class="parrafo_informacion" > En este caso lo que se utilizaron fueron 2 multiplexores conectados cada uno a dos entradas de 16 señales cada una, luego necesitamos simplificar aún más la señal para que podemos obtener una sola salida, de tal manera utilizamos otro multiplexor para poder obtener una sola salida con un bus[16].</P>
+              <P class="parrafo_informacion" >Visualización grafica del MUX4WAY16</P>
+              <img src="images/project_01/grafico/MUX4WAY16.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>
+              <img src="images/project_01/codigo/MUX4WAY16.jpeg" class="load_images2">
+
+              <p class="titulo_trabajo"> MUX8WAY16 </p>
+              <P class="parrafo_informacion" > Ahora en el MUX8WAY16 cuenta con 8 entradas con bus[16] y una única salida. Lo que podemos hacer es repartir estas ocho entradas en dos MUX4WAY16 reduciendo así esto a dos salidas, pero como aun nos falta reducir más la cantidad de salidas utilizamos un MUX16 para poner obtener 1 única salida de un bus[16]</P>
+              <P class="parrafo_informacion" >Visualización grafica del MUX8WAY16</P>
+              <img src="images/project_01/grafico/MUX8WAY16.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>
+              <img src="images/project_01/codigo/MUX8WAY16.jpeg" class="load_images2">
+              
+              <p class="titulo_trabajo"> DMUX4WAY </p>
+              <P class="parrafo_informacion" > Para nuestro DMUX4WAY necesitamos conseguir 4 salidas, de esta manera analizando un poco nuestra situación, podemos darnos cuenta de que los DMUX pueden producir dos salidas, de esta manera si utilizamos 3 DMUX conectado podremos obtener nuestras 4 salidas.</P>
+              <P class="parrafo_informacion" >Visualización grafica del DMUX4WAY</P>
+              <img src="images/project_01/grafico/DMUX4WAY.jpeg" class="load_images2">              
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>
+              <img src="images/project_01/codigo/DMUX4WAY.jpeg" class="load_images2">
+
+              <p class="titulo_trabajo"> DMUX8WAY </p>
+              <P class="parrafo_informacion" >De una forma muy parecida utilizamos simultáneamente DMUX para conseguir a partir de una entrada las 8 salidas que posee el DMUX8WAY</P>
+              <P class="parrafo_informacion" >Visualización grafica del DMUX8WAY</P>
+              <img src="images/project_01/grafico/DMUX8WAY.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>
+              <img src="images/project_01/codigo/DMUX8WAY.jpeg" class="load_images2">
+              <p></p>
+
+              <p class="titulo_trabajo"> LISTA DE CONCEPTOS. </p>
+              <P class="parrafo_informacion" > 1. En el momento en que se cambia el orden, sigue funcionando porque no afecta que el uno se ejecute antes que el otro, ya que no dependen del otro para lanzar un resultado. </P>
+              <P class="parrafo_informacion" > 2. Una función booleana se representa como una suma de mini términos, sencillamente fijándose en la tabla de valores de verdad el valor que tiene la salida. Sabiendo los valores de la salida es sino sumar un mini termino que contenga la salida con valor 1 y sumarlo con los otros mini términos que también su salida sea igual a 1. </P>
+              <P class="parrafo_informacion" > 3 y 4. </P>
+              <img src="images/project_01/concepto3-4.jpeg" class="load_images2">
+              <P class="parrafo_informacion" > 5. </P>
+              <P class="parrafo_informacion" > 6. Estos diagramas se realizaron durante todo el proyecto.</P>
+              <P class="parrafo_informacion" > 7. Este punto tambien lo realicé en el taller y en las imagenes se ve la evidencia.</P>
+              <P class="parrafo_informacion" > 
+                  <ul>
+                    <li>8. a. Es importante realizar los ejercicios de esta manera porque así iremos formando nuestro conocimiento paso a paso, para no quedar con baches que después nos puedan perjudicar a la hora de seguir trabajando durante los proyectos. </li>
+                    <li> b. </li>
+                    <li> c. </li>
+                    <li> d. El bit de mayor peso es el bit que se puede encontrar al lado izquierdo. </li>
+                    <li> e. El bit de menor peso es el bit que se puede encontrar al lado derecho.</li>
+                    <li> f. </li>
+                  </ul>
+               </P>
+          </li>
+                  
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <a href="https://twitter.com/vr_Experiences1" target="_blank">
+        <img src="../../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://www.facebook.com/vrExperienceStudio/" target="_blank">
+        <img src="../../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      </a>
+      <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A" target="_blank">
+        <img src="../../img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
+      </a>
+      <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa</p>
+    </footer>
+  </body>
+</html>
