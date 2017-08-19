@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vrExperienceStudio </title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html" id="logo">
+        <h1>VR-ExperienceStudio</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../portafolio.html" class="selected">Portafolio</a></li>
+          <li><a href="../../acerca.html">Acerca de</a></li>
+          <li><a href="../../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <section>
+        <ul id="parrafo_descripción">
+          <li>
+              <img src="images/project_03.png" alt="project_03" class="load_images">
+              <p class="titulo_trabajo"> Project 3: Sequential Chips </p>
+              <p class="parrafo_informacion">Todo este proyecto se se realizó en base a<a href="http://www.nand2tetris.org/" target="_blank"> nand2teris</a></p>
+              <p class="parrafo_informacion">Puedes descargar la carpeta con los resultados finales de esta parte del proyecto <a href="https://drive.google.com/file/d/0B3C4hPdiWOodYzJkbVd3elliM0E/view?usp=sharing" target="_blank"> dando click aquí</a>.</p>
+
+            
+              <p class="titulo_trabajo"> BIT </p>
+              <P class="parrafo_informacion" >Visualización grafica del BIT</P>
+              <img src="images/project_03/grafico/BIT.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_03/codigo/BIT.PNG" class="load_images2">
+              <P class="parrafo_informacion"> El BIT nos permite guardar un bit en memoria.</P>
+
+              <p class="titulo_trabajo"> REGISTER </p>
+              <P class="parrafo_informacion" >Visualización grafica del REGISTER</P>
+              <img src="images/project_03/grafico/REGISTER.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_03/codigo/REGISTER.PNG" class="load_images2">
+              <P class="parrafo_informacion"> El REGISTER es una cantidad de BIT conectados, que nos permiten almacenares varios bits en memoria.</P>
+
+
+              <p class="titulo_trabajo"> RAM8 </p>
+              <P class="parrafo_informacion"> Para la RAM8 lo que hacemos es conectar con un DMUX8WAT16 el load y el register, este nos proporciona 8 datos, los cuales podemos almacenar en memoria por medio de unos REGISTER conectados a las direcciones de entrada. Como tendremos 8 outputs del REGISTER, lo que hacemos es que los conectamos a un MUX8WAY16 para optener una salida. De un modo muy similar duncionan las RAM64, la RAM512, la RAM4K y la RAM16K. Solo que para conectar estas lo unico que usamos es la cantidad de RAM menor a ella que acumule la cantidad de BIT necesarios. A continuación dejaré las dos primeras graficas para que comprendan como se hace el proceso.</P>
+               <P class="parrafo_informacion" >Visualización grafica de la RAM8</P>
+              <img src="images/project_03/grafico/RAM8.jpeg" class="load_images2">
+               <P class="parrafo_informacion" >Visualización grafica de la RAM64</P>
+              <img src="images/project_03/grafico/RAM64.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó la RAM8</P>  
+              <img src="images/project_03/codigo/RAM8.PNG" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó la RAM64</P>  
+              <img src="images/project_03/codigo/RAM64.PNG" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó la RAM512</P>  
+              <img src="images/project_03/codigo/RAM512.PNG" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó la RAM4k</P>  
+              <img src="images/project_03/codigo/RAM4K.PNG" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó la RAM16K</P>  
+              <img src="images/project_03/codigo/RAM16K.PNG" class="load_images2">
+
+
+
+              <p class="titulo_trabajo"> PC </p>
+              <P class="parrafo_informacion" >Visualización grafica de la PC</P>
+              <img src="images/project_03/grafico/PC.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
+              <img src="images/project_03/codigo/PC.PNG" class="load_images2">
+              <P class="parrafo_informacion"> Para PC podemos decir que este controla tres funciones: inc, load y reset. Con los cuales emite una dirección de 8 bits, se restablece a cero y se puede cargar con cualquier 1 de las posibles 256 direcciones.</P>
+
+
+              <p class="titulo_trabajo"> LISTA DE CONCEPTOS. </p>
+              <P class="parrafo_informacion" > 1. </P>
+              <img src="images/project_03/grafico/concepto1.jpeg" class="load_images2">
+              <P class="parrafo_informacion" >Como pudimos apreciar en la imagen el el tick es cuando la señal del reloj es cero y el tock cuando es 1. El flanco de bajada se produce cuando la señal pasa del estado 1 al 0 y el flanco de subida cuando pasa del 0 al 1, el ciclo es el tiempo en que tarda desde el inicio de un tick hasta cuando finaliza el tock, el periodo es el tiempo que le toma a un ciclo terminarse y la frecuencia no la podemos ver en la imagen pero es la cantidad de ciclos que se pueden realizar en 1 segundo.</P> 
+              <P class="parrafo_informacion" > 2.  </P>
+              <P class="parrafo_informacion" > 3.  </P>
+               <img src="images/project_03/grafico/concepto3.JPG" class="load_images2">
+               <P class="parrafo_informacion" > La imagen que acabamosde apreciar nos permite darnos cuenta de que en un circuito combinacional la salida es función unica y exclisivamente se sus entradas ya que estas no poseen ningún tip ode realimentación, encambio el circuito secuencial se determina  por sus entradas y por sus salidas, con lo que podríamos decir que tanto las salidas como las entradas en el tiempo anterior afectan las salidas del presente. </P>
+              <p class="parrafo_informacion" > 4.  
+                - Un circuito combinacional está formado por compuertas conectadas entre si cuya salida está en función de la entrada.
+              <p class="parrafo_informacion" >- Un circuito secuencial es capaz de tener salidas en función de su entrada y el tiempo.</p>
+              <p class="parrafo_informacion" >-Los circuitos combinaciones son la base de los sistemas cómputo.  </p>
+              <p class="parrafo_informacion" >- En un circuito secuencial cualquier cambio en los valores de entrada se refleja (después de un intervalo de tiempo) en las salidas.</p>
+              <p class="parrafo_informacion" > -Los circuitos combinaciones realizan operaciones como suma, resta, multiplicación y división </p>
+              
+              <p class="parrafo_informacion" > 5.  </P>
+              <P class="parrafo_informacion" > a.Para mi la respuesta es negativa, ya que para cualquiera de esas dos operaciones que se haga con la RAM se siguen utilizandon los registros y se sigue teniendo en cuenta el reloj.  </P>
+              <P class="parrafo_informacion" > b. Un ejemplo sería, si tenemos un valor asignado en un registro y en el momento de hacer la lectura en un tiempo después, la salída será igual a el valor que tiene ese registro almacenado en el tiempo pasado.</P>
+              <P class="parrafo_informacion" > 6. La dirección en memoria es un registro encambio el contenido de esa dirección es el contenido almasenado dentro de esa dirección. </P>
+              <P class="parrafo_informacion" > 8. Supongamos que tenemos una memoria de 16 bits de Bus de Datos y cada registro en la memoria de 12 bits. Si tenemos un bus de Datos de 16 bits, entonces tenemos 2Bites que sería el ancho de Bus de datos. Ahora, la capacidad de la memoria simplemente se consigue multiplicando el ancho de bus de datos con el registro en la memoria.  </P>
+              <p class="parrafo_informacion"> así que nuestra formula queda así: Capacidad de Memoria = Ancho de Bus de datos x Espacio de registro en la memoria. Y adecuando esta formula a nuestros datos, podemos decir que:</p>
+              <p class="parrafo_informacion" > capacidad = 2^n * m  </p>
+              <P class="parrafo_informacion" > 9. Al cambiar el bit de load en un registro no se evidencia inmediatamente en la salida debido a que el cambio se realiza con un cambio proporcionado por un flanco de tiempo, es posible que se haya hecho un cambio en el bit mientras no ocurria ningún flanco de tiempo y haya podido haber regresado al estado anterior, lo que no permitira ver ningun cambio, ya que se lepuede estar pasando el mismo valor, y por otro lado hay que tener en cuenta que si el cambio en el bit de load se realizo en cierto instante de tiempo, hay que esperar hasata que ocurra el flanco para que se pueda notar algún cambio. </P>
+              <P class="parrafo_informacion" > 10. este es un registro del procesador de un computador, el cual indica la posición en donde está el procesador en su secuencia de instrucciones. Dependiendo del computador el PC puede estar conteniendo la instrucción que es ejecutada o la dirección de la próxima instrucción a ser ejecutada. </P>
+              <p></p>
+              <p class="parrafo_informacion"> RETO. </p>
+              <p class="parrafo_informacion"> El retardo de propagación es muy importante porque es el tiempo que limita la frecuencia máxima a la que es posible trabajar.</p>
+              <p class="parrafo_informacion">a.Los retardos generan que regulan la velocidad a la que se pueden procesar los datos. La reducción de los retardos de propagación en circuitos digitales permite procesar datos a una velocidad más rápida y mejor el rendimiento general. </p>
+              <p class="parrafo_informacion">b. Para el funcionamiento en un circuito secuencial lo más combeniente es que este retardo se adecue a cada ciclo.  </p>
+            
+          </li>                  
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <a href="https://twitter.com/vr_Experiences1" target="_blank">
+        <img src="../../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://www.facebook.com/vrExperienceStudio/" target="_blank">
+        <img src="../../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      </a>
+      <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A" target="_blank">
+        <img src="../../img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
+      </a>
+      <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa</p>
+    </footer>
+  </body>
+</html>
