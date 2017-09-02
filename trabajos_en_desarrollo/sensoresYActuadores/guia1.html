@@ -30,50 +30,24 @@
         <ul id="parrafo_descripción">
           <li>
               <img src="images/project_02.png" alt="project_02" class="load_images">
-              <p class="titulo_trabajo"> Project 2: Combinational Chips </p>
-              <p class="parrafo_informacion">Todo este proyecto se se realizó en base a<a href="http://www.nand2tetris.org/" target="_blank"> nand2teris</a></p>
-              <p class="parrafo_informacion">Puedes descargar la carpeta con los resultados finales de esta parte del proyecto <a href="https://drive.google.com/file/d/0B3C4hPdiWOodYzJkbVd3elliM0E/view?usp=sharing" target="_blank"> dando click aquí</a>.</p>
+              <p class="titulo_trabajo"> Guía 1: Interfaces Seriales </p>
+              <p class="parrafo_informacion">Todo este proyecto se se realizó en base a la asesoría en clase de Sensores y Actuadores I en la carrera de Ingeniería en Diseño de Entreteimiento Digital.</p>
+              <p class="parrafo_informacion">Puedes descargar la carpeta con los códigos finales de esta parte del proyecto. <a href="https://drive.google.com/file/d/0B3C4hPdiWOodYzJkbVd3elliM0E/view?usp=sharing" target="_blank"> dando click aquí</a>.</p>
 
-              <p class="titulo_trabajo"> HALF ADDER </p>
-              <P class="parrafo_informacion" >Tabla de verdad del HALF ADDER </P>
-              <img src="images/project_02/tablas_verdad/HALFADDER.PNG" class="load_images2">
-              <P class="parrafo_informacion" >Visualización grafica del HALF ADDER</P>
-              <img src="images/project_02/grafico/HALFADDER.jpeg" class="load_images2">
-              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
-              <img src="images/project_02/codigo/HALFADDER.PNG" class="load_images2">
-              <P class="parrafo_informacion"> El HALF ADDER nos permite sumar 2 bits, si nos fijamos detenidamnete en los valores que nos suministra la tabla de verdad el valor sum posee los mismos valores que nos da la tabla de verdad de la compuerta XOR, siendo este el bit menos significativo y de igual forma analizando los valores de la tabla en el Carry los valores son los de una compuerta AND, siendo este el bit más significativo.</P>
+              <p class="titulo_trabajo"> ACTIVIDAD 1. LECTURAS </p>
+              <P>¿Cómo usar los LEDs? Material escrito por la empresa Adafruit.<a href="https://learn.adafruit.com/all-about-leds/overview" target="_blank" > mira la lectura aquí</a> </P>
+              <P>PWM de Adafruit:<a href="https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/overview" target="_blank" > mira la lectura aquí</a> </P>
+              <P>comunicaciones seriales de sparkfun:<a href="https://learn.sparkfun.com/tutorials/serial-communication" target="_blank" > mira la lectura aquí</a> </P>
+              <P>Capítulo 2 del texto guía <a href="https://drive.google.com/open?id=0B0FEIQwvlT4Mb0tXWnVtTVlyUVU" target="_blank" > mira la lectura aquí</a> </P>     
+              <p></p>
 
-              <p class="titulo_trabajo"> FULL ADDER </p>
-              <P class="parrafo_informacion" >Tabla de verdad del FULL ADDER </P>
-              <img src="images/project_02/tablas_verdad/FULLADDER.PNG" class="load_images2">
-              <P class="parrafo_informacion" >Visualización grafica del FULL ADDER</P>
-              <img src="images/project_02/grafico/FULLADDER.jpeg" class="load_images2">
-              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
-              <img src="images/project_02/codigo/FULLADDER.PNG" class="load_images2">
-              <P class="parrafo_informacion"> Para el FULL ADDER si nos fijamos en la tabla de verdad podemos darnos cuenta que sus primeros valores son iguales a los del sum y carry del HALF ADDER y los segundos valores del carry son iguales a los de la compuerta OR, de esta manera utilizamos dos HALF ADDER para poder procesar las 3 entradas y si utilizamos un OR para procesar los carry de los HALF ADDER podemos obtener como resultado nuestro FUL ADDER.</P>
+              <p class="titulo_trabajo"> ACTIVIDAD 2. </p>
+              <P  class="parrafo_informacion"> En este espacio encontraras las respuestas a las preguntas planteadas en la clase de acuerdo a las lecturas de la actividad anterior.</P>
+              <p></p>
 
-
-              <p class="titulo_trabajo"> ADD 16 </p>
-              <P class="parrafo_informacion" >Visualización grafica del ADD 16</P>
-              <img src="images/project_02/grafico/ADD16.jpg" class="load_images2">
-              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
-              <img src="images/project_02/codigo/ADD16.PNG" class="load_images2">
-              <P class="parrafo_informacion"> Para el ADD 16 lo unico que hacemos es: primero conectar un HALF ADDER a las entradas a[0] y b[0], luego conectamos el carry de este HALF ADDER como la entrada c del FULL ADDER y a este las entradas a y b que corresponden, repetimos este proceso hasta que tengamos las 16 entadas a y b conectadas, de esta panera podemos obtener nuestro ADD 16. </P>
-
-              <p class="titulo_trabajo"> INC 16 </p>
-              <P class="parrafo_informacion" >Visualización grafica del INC 16</P>
-              <img src="images/project_02/grafico/INC16.jpeg" class="load_images2">
-              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
-              <img src="images/project_02/codigo/INC16.PNG" class="load_images2">
-              <P class="parrafo_informacion"> Para el INC 16 lo unico que hacemos es usar un Add16 para controlar las todos los bits de la entrada, y usamos una entrada que nos que nos sume un valor de 0000000000000001 para poder obtener nuestra INC 16.</P>
-
-              <p class="titulo_trabajo"> ALU</p>
-              <P class="parrafo_informacion" >Visualización grafica del ALU.</P>
-              <img src="images/project_02/grafico/ALU.jpeg" class="load_images2">
-              <P class="parrafo_informacion" >Código con el que se solucionó el ejercicio</P>  
-              <img src="images/project_02/codigo/ALU.PNG" class="load_images2">
-              <P class="parrafo_informacion"> El ALU es en general una cadena de transformaciones, transformaciones que se le realizan a dos valores, "X" y "Y" como podemos apreciar en las imagenes anteriores. Los dos valores pasan primero cada una por una fase de transforcin que es controlada por una señal de control, luego de esta transformación las señales pasan por otra y así sucesivamente hasta llegar al final. El resultado en la salida depende de cada uno de las señales de control sobre "X" y "Y". </P>
-
+              <P  class="parrafo_informacion"> 1. ¿Qué consideraciones debe tener en cuenta para seleccionar un LED?</P>
+              <P  class="parrafo_informacion"> Lo primero hay hay que saber es que los leds son muy simples, solo posean dos patas, el CATODO y el ANODO. El CATODO es la pata positiva, lo que significa que a esta se debe conectar la entrada de voltaje positiva.  </P>
+              <p></p>
 
               <p class="titulo_trabajo"> LISTA DE CONCEPTOS. </p>
               <P class="parrafo_informacion" > 1. </P>
