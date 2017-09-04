@@ -46,42 +46,35 @@
               <p></p>
 
               <P  class="parrafo_informacion"> 1. ¿Qué consideraciones debe tener en cuenta para seleccionar un LED?</P>
-              <P  class="parrafo_informacion"> Lo primero hay hay que saber es que los leds son muy simples, solo posean dos patas, el CATODO y el ANODO. El CATODO es la pata positiva, lo que significa que a esta se debe conectar la entrada de voltaje positiva.  </P>
+              <P  class="parrafo_informacion"> Lo primero hay que saber es que los leds son muy simples, solo posean dos patas, el CATODO y el ANODO. El CATODO es la pata positiva, lo que significa que a esta se debe conectar la entrada de voltaje positiva y el ANODO es la pata negativa del led. Hay que tener esto muy en cuenta porque los leds solo los podemos conectar de esta forma ya que son diodos y solo reciben el voltaje de una manera. Debemos tener en cuenta es el color y el tamaño que lo necesitamos, debido a que en este momento hay una gran variedad de LED’S en colores y tamaños diferentes. Puedes tener en cuenta a la hora de elegir un LED es el tipo de material con el que está construido y algo muy importante es la cantidad de iluminación que produce;  </P>
+              <p class="parrafo_informacion">    1. Los LEDs de 5mm son muy brillantes y se utilizan para iluminación </p>
+              <p class="parrafo_informacion">    2. Los LEDs de 3mm no son tan brillantes pero pueden servir para dar indicaciones (que algo esté prendido)</p>
+              <p class="parrafo_informacion">    3. Los LEDs de 10mm son más grandes que los anteriores pero si de iluminación hablamos son parecidos a los de 5mm.</p>
+              <p class="parrafo_informacion">Para saber mejor sobre lo anterior podemos buscar en la ficha de datos de los LEDs a utilizar su tamaño, intensidad luminosa, longitud de onda (que color es el que emite).</p>
               <p></p>
-
-              <p class="titulo_trabajo"> LISTA DE CONCEPTOS. </p>
-              <P class="parrafo_informacion" > 1. </P>
-              <ul>
-                    <li>1  es  00000001</li>
-                    <li>0  es  00000000 </li>
-                    <li>-1 es  11111111 </li>
-                    <li>-128 es 00000001 </li>
-                    <li>127  es 11111110 </li>
-                    <li>¿por qué el numero 128 y el número -130 no están representado?.  Lo que pasa es que con 8 bits no puedo representar el 128 ni el -130, ya que con ocho bits solo puedo representar desde el numero -128 hasta el numero 127.</li>
-              </ul>
-              
-              <img src="images/project_02/grafico/concepto1.jpg" class="load_images2">
-
-              <P class="parrafo_informacion" > 2.  Lo que tiene en común la manera de representar el -1 en 8 y 16 bits es que en las dos maneras cada uno de sus bits es 1. </P>
-              <P class="parrafo_informacion" > 3. Para 8 bits el rango de numeros enteros con signo que se pueden representar van desde el -128 hasta el 127, para 16 bits desde el -32768 hasta el 32767 y para 32 bits va desde el  - 2 147 483 648 hasta el 2 147 483 647 </P>
-              <p class="parrafo_informacion"> 2**8 = 256</p>
-              <p class="parrafo_informacion"> 2**16 = 65 536</p>
-              <p class="parrafo_informacion"> 2**32 = 4 294 967 296</p>
+              <p class="parrafo_informacion">2. Los LEDs pueden llegar a ser un factor muy importante a la hora del diseño de experiencias interactivas debido a que gracias a los diferentes colores y variedad de LEDs podemos llamar la atención de los usuarios, de esta manera podríamos generar indicaciones que los ayuden a orientarse mejor dentro de la experiencia, se pueden utilizar como un medio para decorar los espacios, vitrinas y todo tipo de iluminación colorida que le queramos dar a algo. Con los LEDs también podemos generar imágenes, aparatos que se mueven y generen un trazo con los LEDs todo esto lleno de vida y color gracias al uso de estos. </p>
               <p></p>
-              <p class="parrafo_informacion" > 4. La imagen muestra la tabla. </P>
-              <img src="images/project_02/grafico/concepto4.jpeg" class="load_images2">
-              <p class="parrafo_informacion" > 5. La imagen muestra la suma.</P>
-              <img src="images/project_02/grafico/concepto5.jpeg" class="load_images2">
-              <P class="parrafo_informacion" > 6. La imagen muestra la suma pero este punto está erroneo debido a que la suma desborda la capacidad del sumador de 4 bits. </P>
-              <img src="images/project_02/grafico/concepto6.jpeg" class="load_images2">
-              <p  class="parrafo_informacion">7. La relación que encuentro es que el numero 15 como es mayor a 7 esta por de los valores que podemos representar, de esta manera dandonos un resultado que tampoco podemos representar.</p>
-              <P class="parrafo_informacion" > 8. Las computadoras pueden usar este metodo para realizar operaciones algebraicas, ya que les permitirian hacer diferentes operaciones con un mismo chip.</P>
-              <P class="parrafo_informacion" > 9. El HALF ADDER nos permite sumar dos números de un bit, como en nuestro ejercicio sumabamos unicamente la entrada a con la b y el FULL ADDER lo que perimite es sumar 3 numeros, remontandonos a la acrividad podiamos sumar 3 numeros de un bit, las entradas a, b y c.</P>
-              <P class="parrafo_informacion" > 10. El carry es que en el momento de hacer la suma se produjo un numero mayor al que se podría graficar en ese momento, por ejemplo cuando estamos sumando numeros en base dies y el resultado no se puede colocar en el primer velor, así que devemos "llevar" un numero a una posición más a la isquierda; de esta manera el carry generado en esa parte de la suma se le tiene que sumar al numero de la izquierda y así sucesivamente hasta terminar la operación.  </P>
+              <p class="parrafo_informacion">3. </p>
               <p></p>
-              <p class="parrafo_informacion">Puedes descargar la lista de chequeo <a href="https://drive.google.com/file/d/0B3C4hPdiWOodd3l3T19OY1RIS3M/view?usp=sharing" target="_blank"> dando click aquí</a>.</p>
+              <p class="parrafo_informacion">4. No sería bueno conectar LED directamente a un microcontrolador sin un circuito de acondicionamiento ya que como el circuito de acondicionamiento nos permite proporcionar una alimentación al LED desde el microcontrolador y permite que haya una protección contra las fuentes de voltaje o corriente y sobretensiones. Así que si conectamos un LED a un microcontrolador sin el adecuado circuito de acondicionamiento el LED se dañará si se le sobrepasa el voltaje máximo de funcionamiento.</p>
               <p></p>
-               <p class="parrafo_informacion">Puedes descargar la AutoEvaluación <a href="https://drive.google.com/file/d/0B3C4hPdiWOodUFJfVzhNeFFvSUU/view?usp=sharing" target="_blank"> dando click aquí</a>.</p>
+              <p class="parrafo_informacion">5. Si tenemos un LED y una resistencia conectados a un microcontrolador, podemos variar la intensidad utilizando resistencias con diferentes valores. Mientras más pequeño sea el valor de la resistencia hace que el LEDs tendrá más brillo debido a que recibe una mayor cantidad de corriente y de sentido contrario mientras más resistencia haya dentro del circuito menor será la corriente y el LED alumbrará menos.</p>
+              <p></p>
+              <p class="parrafo_informacion">6. Para variar el brillo o intensidad de un LED utilizando una señal de PWM lo único que necesitamos variar es la cantidad de voltaje que le aplicamos al circuito en el que está conectado el LED y la resistencia, de esta manera lograremos que nuestro LED ilumine más poquito si le aplicamos una menor cantidad de voltaje y por otro lado si le aplicamos mucho más voltaje lograremos que nuestro LED ilumine mucho más.</p>
+              <p></p>
+              <p class="parrafo_informacion">7. Para generar diferentes colores con señales de PWM lo que necesitaremos es tener los tres LED básicos con los cuales se generan el resto de colores. El Rojo, el Verde y el Azul son los tres colores primarios necesarios para la combinación de los colores. Para generar una mescla de colores mejor, desde mi percepción utilizaría un LED RGB, para que puedas notar mejor el cambio de los colores. Ahora que sabemos con que colores trabajaremos, nos falta crear el circuito de acondicionamiento para cada LED, (ó para cada pata si es un LED RGB). Ahora para variar dentro de los colores con señales PWM lo único que tenemos que hacer es variando el voltaje que recibe cada color, por ejemplo, si quiero un color rojo, le entrego una alta cantidad de  voltaje a la parte del LED rojo, si nuestro circuito recibe el voltaje a través de un microcontrolador como el Arduino le podemos entregar una señal de 255 en esta pata, ahora si queremos que el color que veamos sea un amarilloso, podemos entregarle voltaje tanto al led Rojo como al verde y así mesclando la cantidad de voltajes para seleccionar el color queramos. </p>
+              <p></p>
+              <p class="parrafo_informacion">8. El programa del microcontrolador no es igual para un LED de cátodo común o para un LED de ánodo común, esto se debe a que, si tenemos un LED de cátodo común, esté lo podremos controlar desde nuestro microcontrolador desde los pines de PWM, variando el valor de salida de voltaje de 0 a 5 voltios (lo que es igual a variarlo de 0 255 en el Arduino). En el LED de cátodo común, mientras más grande sea el voltaje que le entreguemos al LED más brillará. Por otro lado, si tenemos un LED RGB de ánodo común, este primero que todo cambia un poco su conexión, el ánodo común se conecta a 5V y los otros tres pines a los pines del microcontrolador a través de una resistencia como el LED anterior, pero a la hora de entregarle voltaje desde los pines de PWM mientras mayor sea la señal de salida menor será la diferencia de voltaje, lo que indica que menor es la corriente y esto ocasionará que menos brille, así que si queremos que el LED brille más debemos tener una salida más pequeña.  </p>
+              <p></p>
+              <p class="parrafo_informacion">9. El Duty Cycle se puede entender como  la relación que existente entre el tiempo en que una señal se encuentra activa con el periodo de esta señal. Esto se podría simbolizar así: DutyCycle = TiempoActivo/ PeriodoSeñal</p>
+              <img src="images/project_01/DutyCycle.png" alt="project_01" class="load_images">
+              <p></p>
+              <p class="parrafo_informacion"> 10. De acuerdo a la fórmula del punto anterior podemos despejar el periodo de la señal pasándolo a multiplicar al otro lado de la igualdad y pasando a dividir a Duty Cycle al otro lado de la igualdad, quedando así: PeriodoSeñal= TiempoActivo/DutyCycle o mirándolo de otra manera el período es el tiempo en que la señal se demora en cumplir un ciclo, el tiempo en el que ocurre un flanco de subida u otro. Y para hallar la frecuencia lo único que debemos hacer es despejar la fórmula: Frecuencia = 1 / Periodo </p>
+             
+              <p></p>
+              <p class="parrafo_informacion">Puedes descargar la lista de chequeo <a href="" target="_blank"> dando click aquí</a>.</p>
+              <p></p>
+               <p class="parrafo_informacion">Puedes descargar la AutoEvaluación <a href="" target="_blank"> dando click aquí</a>.</p>
 
 
                   
