@@ -29,7 +29,7 @@
       <section>
         <ul id="parrafo_descripción">
           <li>
-              <img src="images/project_02.png" alt="project_02" class="load_images">
+              <img src="../images/guia_01.png" alt="guia_01" class="load_images">
               <p class="titulo_trabajo"> Guía 1: Interfaces Seriales </p>
               <p class="parrafo_informacion">Todo este proyecto se se realizó en base a la asesoría en clase de Sensores y Actuadores I en la carrera de Ingeniería en Diseño de Entreteimiento Digital.</p>
               <p class="parrafo_informacion">Puedes descargar la carpeta con los códigos finales de esta parte del proyecto. <a href="https://drive.google.com/file/d/0B3C4hPdiWOodYzJkbVd3elliM0E/view?usp=sharing" target="_blank"> dando click aquí</a>.</p>
@@ -54,7 +54,12 @@
               <p></p>
               <p class="parrafo_informacion">2. Los LEDs pueden llegar a ser un factor muy importante a la hora del diseño de experiencias interactivas debido a que gracias a los diferentes colores y variedad de LEDs podemos llamar la atención de los usuarios, de esta manera podríamos generar indicaciones que los ayuden a orientarse mejor dentro de la experiencia, se pueden utilizar como un medio para decorar los espacios, vitrinas y todo tipo de iluminación colorida que le queramos dar a algo. Con los LEDs también podemos generar imágenes, aparatos que se mueven y generen un trazo con los LEDs todo esto lleno de vida y color gracias al uso de estos. </p>
               <p></p>
-              <p class="parrafo_informacion">3. </p>
+              <p class="parrafo_informacion">3. Para realizar un buen circuito de acondicionamiento, primero demos nos cuenta de que la salida por el pin del arduino son de 5V y si tenemos una resistencia de 220oh, podemos aplicar ley de ohm con estos dos valores.</p>
+               <img src="images/project_01/leyOhm.JPG" alt="project_01" class="load_images2">
+               <p class="parrafo_informacion"> de esta manera remplazando los valores en la formula tenemos I = 5V / 220ohm  por lo que tenemos como resultado que I = 0.02A  lo que es lo mismo a 20mA tal y como nos lo muestra la hoja de datos. Por lo tanto podemos decir que tenemos un buen circuito de acondicionamiento.</p>
+               <img src="images/project_01/punto3.PNG" alt="project_01" class="load_images2">
+               <p class="parrafo_informacion"> acá tenemos nuestro circuito</p>}
+               <img src="images/project_01/punto3arduino.PNG" alt="project_01" class="load_images2">
               <p></p>
               <p class="parrafo_informacion">4. No sería bueno conectar LED directamente a un microcontrolador sin un circuito de acondicionamiento ya que como el circuito de acondicionamiento nos permite proporcionar una alimentación al LED desde el microcontrolador y permite que haya una protección contra las fuentes de voltaje o corriente y sobretensiones. Así que si conectamos un LED a un microcontrolador sin el adecuado circuito de acondicionamiento el LED se dañará si se le sobrepasa el voltaje máximo de funcionamiento.</p>
               <p></p>
@@ -67,7 +72,7 @@
               <p class="parrafo_informacion">8. El programa del microcontrolador no es igual para un LED de cátodo común o para un LED de ánodo común, esto se debe a que, si tenemos un LED de cátodo común, esté lo podremos controlar desde nuestro microcontrolador desde los pines de PWM, variando el valor de salida de voltaje de 0 a 5 voltios (lo que es igual a variarlo de 0 255 en el Arduino). En el LED de cátodo común, mientras más grande sea el voltaje que le entreguemos al LED más brillará. Por otro lado, si tenemos un LED RGB de ánodo común, este primero que todo cambia un poco su conexión, el ánodo común se conecta a 5V y los otros tres pines a los pines del microcontrolador a través de una resistencia como el LED anterior, pero a la hora de entregarle voltaje desde los pines de PWM mientras mayor sea la señal de salida menor será la diferencia de voltaje, lo que indica que menor es la corriente y esto ocasionará que menos brille, así que si queremos que el LED brille más debemos tener una salida más pequeña.  </p>
               <p></p>
               <p class="parrafo_informacion">9. El Duty Cycle se puede entender como  la relación que existente entre el tiempo en que una señal se encuentra activa con el periodo de esta señal. Esto se podría simbolizar así: DutyCycle = 100* TiempoActivo/ PeriodoSeñal</p>
-              <img src="images/project_01/DutyCycle.png" alt="project_01" class="load_images">
+              <img src="images/project_01/DutyCycle.png" alt="project_01" class="load_images2">
               <p></p>
               <p class="parrafo_informacion"> 10. De acuerdo a la fórmula del punto anterior podemos despejar el periodo de la señal pasándolo a multiplicar al otro lado de la igualdad y pasando a dividir a Duty Cycle al otro lado de la igualdad, quedando así: PeriodoSeñal= TiempoActivo/DutyCycle o mirándolo de otra manera el período es el tiempo en que la señal se demora en cumplir un ciclo, el tiempo en el que ocurre un flanco de subida u otro. Y para hallar la frecuencia lo único que debemos hacer es despejar la fórmula: Frecuencia = 1 / Periodo </p>
               <p></p>
@@ -83,20 +88,20 @@
               <p></p>
               <p class="parrafo_informacion"> 16. Los bits de sincronización son los bits que inicio la transmisión de datos y la terminación de esta misma. Los datos son la cantidad de bits que hay en una transmisión, en general la comunicación no siempre se realiza con paquetes de 8 bits, también se envían paquetes de datos con 5, 7 u 8 bits en general la cantidad de información que se envía depende mucho del tipo de información; ASCII estándar tiene un rango de 0 a 127, lo que es igual a 7 bits. Paridad en una comunicación Serial sirve mucho para detectar errores en esta. Existen cuatro maneras diferentes de detectar errores: par, impar, marcada y espaciada.  Para paridad par e impar, con el puerto serial se fija el ultimo bit después de los bits de datos para asegurar un estado lógico alto; si la paridad es par el bit de paridad sería 0 y si la paridad es impar entonces el bit de paridad sería 1.</p>
 
-              <p calss="TERMINAR el punto 15 Y DIAGRAMA DE TIEMPOS."></p>
+              <p calss="TERMINAR el punto 16 Y DIAGRAMA DE TIEMPOS."></p>
 
               <p class="parrafo_informacion"> 17. El BAUD RATE es la tasa de trasmisión Serial de Símbolos, es decir, la velocidad  de transmisión Serial de unidades de señal por segundo. Un ejemplo sería, en la comunicación. PPOR EJEMPLO en Arduino el estándar es un baut rate de 9600.</p>
               <p></p>
               <p class="parrafo_informacion"> 18. El ENDIAN es el formato en el que se almacenan los datos en una máquina en función de los bits más significativos y los menos significativos. Se transmiten primero los bits de menos importancia, eso si, si no se indica de otra maera. </p>
               <p></p>
-              <p class="parrafo_informacion"> 19. en este punto me nerede.</p>
+              <p class="parrafo_informacion"> 19. en este punto me enrede.</p>
               <p></p>
               <p class="parrafo_informacion"> 20. </p>
-               <img src="images/project_01/punto20.png" alt="project_01" class="load_images">
+               <img src="images/project_01/punto20.png" alt="project_01" class="load_images2">
 
               <p></p>
               <p class="parrafo_informacion"> 21.  </p>
-              <img src="images/project_01/arduino.jpg" alt="project_01" class="load_images">
+              <img src="images/project_01/arduino.jpg" alt="project_01" class="load_images2">
               <p class="parrafo_informacion">En esta imagen podemos observar como la parte más izquierda hay un cuadro, este es el puerto USB con el cual el Arduino puede conectarse con el PC y por el otro lado podemos encontrar unos pequeños pines, estos son los de transmisión y recepción de datos con los que el Arduino se puede conectar con otro tipo de microcontroladores, sensores u actuadores.</p>
               <p></p>
               <p class="parrafo_informacion"> 22. Las comunicaciones seriales TTL existen entre voltajes de un microcontrolador de 0V a 3.3V o 5V; en la cual una señal entre 3.3V y 5v indican un bit con el valor en 1 o un bit de parada y una señal de 0 (GND) representa un bit de inicio o un bit con valor de  0.  Por otro lado, las comunicaciones seriales RS-232 se puede encontrar en unos ordenadores más antiguos, es igual a tener el inverso de la señal anterior, los 1 en 0 y los 0 en 1. Otra diferencia es que este protocolo posee señales que oscilan entre -13V y 13V. En estas señales una baja tensión de (-5V, -13V,etc) indica un bit de datos en valor 1 y un bit de señal alta significa un bit de inicio en 0. </p>
@@ -113,21 +118,21 @@
               <p></p>
               <p class="parrafo_informacion"> 28. El método prinln se encarga de imprimir los datos en el puerto serie como un texto ASCII legible para las personas y el write escribe datos binarios en el puerto serial, estos datos se envían como bytes o series de bites.</p>
               <p class="parrafo_informacion"> println y write </p>
-              <img src="images/project_01/println.PNG" alt="project_01" class="load_images">
+              <img src="images/project_01/println.PNG" alt="project_01" class="load_images2">
               <p></p>
               <p class="parrafo_informacion"> 29.  Lo que se hace para conectar por comunicación serial a processing con Arduino, lo primero que deben hacer es importar la librería de comunicación serial para poder trabajar con serial desde processind. Luego se debe poner a escuchar a processing en el puerto en el que se tiene conectado el Arduino. Luego se leen los bytes que posee un buffer (los bytes de entrada que están llegando del Arduino ) hasta que recibe un salto de línea.</p>
 
               <p class="titulo_trabajo" > RETO </p>
               <p class="parrafo_informacion"> Esta es la app que construí en app inventor. </p>
               <p class="parrafo_informacion"> Esta imagen a continuación es de la interfaz de la aplicción.</p>
-              <img src="images/project_01/interfazApp.PNG" alt="project_01" class="load_images">
+              <img src="images/project_01/interfazApp.PNG" alt="project_01" class="load_images2">
               <p class="parrafo_informacion"> Esta imagen a continuación es el diagrama de bloques que controlan el uso de la aplicación.</p>
-              <img src="images/project_01/programacionApp.PNG" alt="project_01" class="load_images">
+              <img src="images/project_01/programacionApp.PNG" alt="project_01" class="load_images2">
               <p class="parrafo_informacion"> Lo que hace esta aplicación es que al principio muestra en el lado superior derecho un texto que muestra el estado de la conexión, primero desconectado, debido a que no se ha realizado ninguna conexión. Luego tenemos dos botones, uno para conectar y el otro para desconectar; el botón de conectar muestra si se tiene el bluethoot encendido los dispositivos que hay con los que se puede conectar la aplicación y el botón de desconectar elimina esas conexiones. Luego tenemos una zona en la que podemos escribir un texto, este texto, es el que debemos enviar por serial para que nuestro Arduino lo comprenda y pueda encender el LED. Tener en cuenta que para que funcione debemos utilizar RGB=#,#,# para poder cambiar el estado de nuestro LED RGB. </p>
               <p>En esta imagen a continuación lo que se ve es como estamos probando la comunicación de nuestra aplicación con el modulo bluethoot.</p>
-               <img src="images/project_01/probandoarduino.jpeg" alt="project_01" class="load_images">
-              <p class="parrafo_informacion"> Para controlar el LED se utilizó la aplicación que se había desarrollado anteriormente en la clase para controlar un RGB con por medio de comunicación Serial. Puedes descargar el código dando click <a href="https://drive.google.com/open?id=0B3C4hPdiWOodUEJoQ1NYS3d6NXc">aquí</a>. </p>
-              <p class="parrafo_informacion">Para descargar la aplicación movil puedes dar click <a href="https://drive.google.com/open?id=0B3C4hPdiWOodTGVncy1HNnF6dUE"> aquí</a>.</p>
+               <img src="images/project_01/probandoarduino.jpeg" alt="project_01" class="load_images2">
+              <p class="parrafo_informacion"> Para controlar el LED se utilizó la aplicación que se había desarrollado anteriormente en la clase para controlar un RGB con por medio de comunicación Serial. Puedes descargar el código dando click <a href="https://drive.google.com/open?id=0B3C4hPdiWOodUEJoQ1NYS3d6NXc" target="_blank">aquí</a>. </p>
+              <p class="parrafo_informacion">Para descargar la aplicación movil puedes dar click <a href="https://drive.google.com/open?id=0B3C4hPdiWOodTGVncy1HNnF6dUE" target="_blank"> aquí</a>.</p>
 
 
 
