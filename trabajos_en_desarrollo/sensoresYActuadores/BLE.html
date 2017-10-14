@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vrExperienceStudio </title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html" id="logo">
+        <h1>VR-ExperienceStudio</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../portafolio.html" class="selected">Portafolio</a></li>
+          <li><a href="../../acerca.html">Acerca de</a></li>
+          <li><a href="../../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <section>
+        <ul id="parrafo_descripción">
+          <li>
+              <img src="images/project_02_BLE/guia_02.png" alt="guia_01" class="load_images">
+              <p class="titulo_trabajo"> Guía 2: Bluetooth Low Energy - Simblee </p>
+              <p class="parrafo_informacion">Todo este proyecto se se realizó en base a la asesoría en clase de Sensores y Actuadores I en la carrera de Ingeniería en Diseño de Entreteimiento Digital.</p>
+              <p class="parrafo_informacion">Puedes descargar la carpeta con los códigos finales de esta parte del proyecto. <a href="" target="_blank"> dando click aquí</a>.</p>
+              <p class="parrafo_informacion"> A continuación encontraras un tutorial para trabajar con BLE y Simblee.</p>
+
+              <p class="titulo_trabajo"> TUTORIAL. </p>
+              <p class="titulo_trabajo"> MARCO TEORICO PARA REALIZAR EL TRABAJO. </p>
+              <P class="parrafo_informacion">En el siguiente documento puedes ingresar para saber más sobre BLE. el porque se diseño, las diferentes plataformas queclass="parrafo_informacion" lo soportan, sus funciones e información muy importante sobre BLE; conocido tambien como bluetooth smar. <a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy?view=all" target="_blank" > ingresa al documento aquí</a> </P>
+
+              <p class="parrafo_informacion" > Lo primero que podremos encontrar en el documento anterior es el ¿Por qué BLE? </p>
+              <p class="parrafo_informacion"> Respondiendo a esta pregunta, lo que hace que BLE sea tan interesante es que es una de las formas más fáciles de poder comunicarse con cualquier plataforma móvil moderna que hay (iOS, Android, teléfonos con Windows, etc.). Lo segundo por tener en cuenta es que BLE nos permite tener un dispositivo bluetooth con muy bajo consumo de energía, a un muy bajo costo y con unas diferencias muy minimas con relación al bluetooth estandar.</p>
+              <p class="parrafo_informacion" >En la siguiente imagen podras ver algunas diferencias entre el BLE y el Buetooth clasico.</p>
+              <a href="images/project_02_BLE/BLEvsBC.PNG"> <img src="images/project_02_BLE/BLEvsBC.PNG" alt="project_02_BLE" class="load_images2"> </a>
+              <p class="parrafo_informacion"> Entre las diferencias se puede observar en la emulación de puerto serie. La tecnología Bluetooth clásica proporciona el perfil de puerto serie (SPP) para la emulación de conexiones de datos en serie. La tecnología de baja energía de Bluetooth no proporciona tal soporte en la especificación estándar v4.0; aunque proveedores como connectBlue pueden proporcionar un buen nivel de soporte. Las velocidades de transferencia de datos con la tecnología Bluetooth clásica que utiliza la velocidad de datos mejorada, pueden superar los 2 Mb / s, pero las de la tecnología de BLE son inferiores a 100 kb / s. Dado esto, la transmisión de BLE consume menos energía pero olvidando un poco la velocidad de transmisión. <a href="http://www.medicalelectronicsdesign.com/article/bluetooth-low-energy-vs-classic-bluetooth-choose-best-wireless-technology-your-application">ingresa acá para saber más</a></p>
+
+
+              <img src="" alt="project_02_BLE" class="load_images2"> <!-- coloquese acá el diagrama de conexiones-->
+              <p></p>
+
+
+              <p class="parrafo_informacion"> Vamos a utilizar un Simblee como BLE para realizar nuestras pruebas. </p>
+              <p class="parrafo_informacion"> Acontinuación puedes encontrar la vista superior del Simblee y la descripción de sus pines de conexión.  </p>
+              <img src="images/project_02_BLE/SimbleeTopView.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/SimbleePines.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Para más información acerca del Simblee puedes ingresar a su hoja de datos <a href="https://www.simblee.com/Simblee%20RFD77101%20Datasheet%20v1.0.pdf" target="_blank"> dando click aquí</a></p>
+              <p class="titulo_trabajo"> INSTALACIÓN DEL ARDUINO IDE. </p>
+              <p class="parrafo_informacion"> Puedes ir a arduino.cc  y darle click en descargas. Pero ingresa directamente al enlace para que dirigirte a la página de descarga oficial del IDE Arduino.<a href="https://www.microsoft.com/es-co/store/p/arduino-ide/9nblggh4rsd8?ocid=badge&rtc=1" target="_blank"> click para ir a descargar</a> </p>
+              <p class="parrafo_informacion"> Dirigete a la carpeta en la que descargaste el instalador y abrelo.</p>
+              <img src="images/project_02_BLE/Instalador.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Sigue todos los pasos de instalación como cualquier otro progrma normal </p>
+              <p class="parrafo_informacion">Si no sabes instalar arduino te invito a que veas el siguiente tutorial </p>
+              <center><iframe height="100%" width="50%" src="https://www.youtube.com/embed/wa4odYkkAvo" frameborder="0" allowfullscreen></iframe></center>
+              <p class="titulo_trabajo"> INSTALACIÓN DE LA LIBRERIA SIMBLEE.</p>
+              <p class="parrafo_informacion"> Ahora vamos a instalar la librería de Simblee en nuestro IDE Arduino.  </p>
+              <p class="parrafo_informacion">Para esto ingresa al siguiente link para seguir los pasos de instalacion de la librería simblee (Nota: si no has instalado el IDE Arduino del paso anterior esta guía tambien trae los pasos.) <a href="https://www.simblee.com/Simblee_Quickstart_Guide_v1.1.0.pdf" target="_blank"> Ingresa al documento aquí</a> </p>
+              <p class="parrafo_informacion"> Observa y lee la guía de usuarios de Simblee para hechar un vistazo a unos ejemplos y un poco más de información sobre el dispositivo. <a href="https://www.simblee.com/Simblee%20User%20Guide%20v2.06.pdf" target="_blank">Ingresa acá para ir a la guía de usuario.</a></p>
+
+              <p class="titulo_trabajo"> PRIMEROS PASOS EN SIMBLEE.</p>              
+              <p class="parrafo_informacion">Primero usaremos una herramienta de prueba publicada por la empresa Nordic que nos permite realizar pruebas de funcionamiento con nuestro dispositivo Simblee.</p>           
+              <p class="parrafo_informacion"> Para descargar la app para ANDROID <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en" target="_blank"> Ingresa aquí</a></p>
+              <p class="parrafo_informacion">Para descargar la app para iOS <a href="https://itunes.apple.com/us/app/nrf-connect/id1054362403?mt=8" target="_blank"> Ingresa aquí</a></p>
+              <p class="parrafo_informacion"> Ahora si a probar nuestro Simblee. Lo que primero debemos hacer es en nuestro IDE Arduino ingresar a Archivos - Ejemplos - Simblee - ProximityAveraged. Si no encuentras el ejemplo te dejo unas imagenes para que lo hagas.</p>
+              <img src="images/project_02_BLE/ProximityAveraged1.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/ProximityAveraged2.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/ProximityAveraged3.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Luego de tener nuestro código estamos listo para cargarlo a nuestro dispósitivo Simblee, para este proyecto utilizamos un RFD77203, un USB Shield RFD22121 y un RGB Shield RFD 22122. </p>
+              <img src="images/project_02_BLE/simbleemontaje.jpeg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Conectemos nuestro Simblee al computador y en el IDE Arduino vamos a Herramientas - Placa y seleccionamos el Simblee que debe aparecernos en la parte inferior de la ventana emergente, si esto no te aparece, es porque no has instalado correctamente las librerías de Simblee, así que te invito a que regreses a la parte de instalacion de librería antes de continuar.  </p>
+              <p class="parrafo_informacion"> Luego de haber seleccionado la placa debemos ingresar a Herramientas - Puerto y seleccionar el puerto COM en el que tenemos conectado nuestro Simblee. Si no sabes cual puerto es, puedes ingresar al administrador de dispositivos de tu computadora y visualizar los dispositivos. En mi caso es el COM8 como muestra la imagen. </p>
+              <img src="images/project_02_BLE/COM.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Ya con nuestro Simblee conectado y seleccionado en el Puerto y la Placa vamos a subir nuestro programa dando click en el botón subir de nuestro IDE Arduino.</p>
+              <img src="images/project_02_BLE/subir.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Para darnos cuenta de que nuestro sketch (código) a subido a nuestro Simblee nos fijamos en la parte inferior izquierda del programa y debemos de tener un aviso que dice "Subido" así como en la imagen.</p>
+              <img src="images/project_02_BLE/subiendo.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Observamos nuestro Simblee y nos daremos cuenta de que el Led verde está encedido.</p>
+              <img src="images/project_02_BLE/simbleeEncendido.jpeg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Antes de ingresar a la aplicación verificamos que nuestro bluetooth esté encendido. Una vez con el bluetooth de nuestro celular esté encendido ingresamos a la aplicación y en la parte superiro derecha encontramos un botón para escanear y lo oprimimos. </p>
+              <img src="images/project_02_BLE/nrfScanning.jpeg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Como podemos ver en la imagen hay un monton de dispositivos bluetooth que capta nuestra aplicación, pero solo vamos a conectarnos al que menor numeros de dBm tenga, ya que mientras más cerca pongamos nuestro celular al dispositivo Simblee más cercano a 0 será el valor. </p>
+              <p class="parrafo_informacion">Al conectarnos al dispositivo Simblee esté cambiará automaticamente de color. </p>
+              <img src="images/project_02_BLE/simbleeConectado.jpeg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Y ahora podemos probar el codigo que subimos a nuestro Simblee, cuando tenemos nuestro dispositivo Simble muy cerca a nuestro telefono movil, podremos observar que el Led se encuentra en rojo, pero si nos vamos alejando el color del Led va a variar, luego se pone amarillo y más lejos se pone verde. </p>
+              <img src="images/project_02_BLE/simbleeDistanciaMedia.jpeg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Ya el primer ejemplo con Simblee lo has terminado ¡FELICITACIONES! </p>
+
+              <p class="titulo_trabajo"> SEGUNDO EJERCICIO CON SIMBLEE.</p>  
+              <p class="parrafo_informacion">En este ejercicio vamos a aprender a comprobar los estados de los botones de nuestro RGB Shield RFD22122. Utilizaremos la misma aplicación movil que descargamos en el ejercicio anterior. Dentro del IDE Arduino vamos a Ejemplos - SimbleeBLE - LedButton. Conectamos nuestro Simblee y le cargamos el sketch (Nota: Recuerda seleccionar el puerto y el COM como lo hiciste en el ejercicio anterior) y conectamos nuestro Simblee a en la aplicación descargada.</p>
+              <p class="parrafo_informacion">Una vez conectemos nuestra aplicación al dispositivo Simble le daremos clic en la opción "Unknown Service"   </p>
+              <img src="images/project_02_BLE/appLedButton1.jpg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Despues de esto veremos una pantalla en la que se nos muestran todos los servicios que estan disponibles en este momento. En la parte que dice "Unknown Characteristic" vamos a oprimir dos veces el botón con las tres flechas hacia abajo tachadas, con el primer click se destachan y con el siguiente se vuelven a tachar, esto para que pueda recibir y captar la señal del botón pulsado.  </p>
+              <img src="images/project_02_BLE/appLedButton2.jpg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Si pulsamos nuestro botón podemos observar como en nuestra aplicación hay un (0x)01 en el value y cada vez que lo soltamos un (0x)00.</p>
+              <img src="images/project_02_BLE/appLedButton3.jpg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Te debes estar preguntando ¿Cómo funciona esto? es simple la verdad. Entra en el siguiente enlace para que te des cuenta de las funciones que tiene y que es lo que hacen. <a href="https://www.simblee.com/Simblee%20Functions%20Reference%20V1.0.pdf" target="_blank"> click aquí para ir al documento.</a> </p>
+              <p class="parrafo_informacion">Tambien podemos enviar datos desde la aplicación movil al Simblee si observamos bien hay otro servicio co nel nombre de Unknown Characteristic pero que en una parte que tiene dice: properties: WRITE, WRITE NO RESPONSE. En esta parte dando click en la fleha podremos enviarle un valor a nuestro Simblee.</p>
+              <img src="images/project_02_BLE/appLedButton4.jpg" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Si le enviamos un 01 a nuestro Simblee esto encenderá el Led y si por lo contrario usamos un 00 esto cambiará el estado del Led y lo apagará.</p>
+              <img src="images/project_02_BLE/appLedButton5.jpg" alt="project_02_BLE" class="load_images2">
+
+              <p class="titulo_trabajo"> AHORA QUE YA CONOCEMOS LO BASICO VAMOS A CREAR NUESTRA PROPIA APP.</p>   
+              <p class="parrafo_informacion"> Primero vamos a realizar unos pequeños cambios en nuestro sketch de arduino para que pueda funcionar a la perfección con la aplicación que vamos a hacer. Compara el ejemplo con las imagenes que te voy a mostrar y lo que no tengas igual cambialo.</p>
+              <img src="images/project_02_BLE/MyAppSimblee1.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/MyAppSimblee2.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/MyAppSimblee3.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/MyAppSimblee4.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Luego de hacer las modificaciones cargamos en nuestro Simblee el sketch.</p>
+              <p class="parrafo_informacion"> Nuestra aplicación la vamos a crear con AppInventor. Los invito a que entren al siguiente enlace y sigan el tutorial <a href="http://iot.appinventor.mit.edu/assets/howtos/MIT_App_Inventor_Basic_Connection.pdf" target="_blank">click aquí para ir al tutorial</a>.</p>
+              <p>En este enlace podran encontrar todas las propiedades de Simblee en AppInventor <a href="http://iot.appinventor.mit.edu/#/bluetoothle/bluetoothleintro">Cliack aquí para ingresar</a>.</p>
+              <p class="parrafo_informacion"> Para poder leer el estado del botón necesitamos agregar unas pequeñas cosas en lo anterior. Acá les dejo los pantalolazos para que lo completen. </p>
+              <p class="parrafo_informacion">Lo quedebemos hacer es agregar un Layout para almacenar un Botón y un Label; el botón se encargará de hacer la lectura del estado del botón del Simblee y en el Layout se imprimirá el valor recibido.</p>
+              <img src="images/project_02_BLE/MyAppSimbleeConBoton.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion">Vamos a nuestro diagrama de bloques y agregamos lo nuevo. unos botonnes ON/OFF que nos permiten enviar un mensaje a los servicios y caracteristicas del Simblee (Para saber cuales son los numeros de los servicios y caracteristicas puedes conectarte al simblee con la aplicación que descargamos apra hacer las primeras pruebas). Debes tener muy en cuenta que para escribir y leer este valor en servicio o carecteristica cambia. aplica los conocimientos adquiridos en el ejercicio dos para saber cual sirve para escribir y cual para leer.</p>
+              <img src="images/project_02_BLE/MyAppSimbleeConBoton2.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/MyAppSimbleeConBoton3.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Puedes descargar el Apk e instalarlo en tu celular o usando el generadordecodigos, para lo cual necesitaras descargarte a tu celular la aplicación MIT AI2 Companion que encontraras enla Google Play Store <a href="https://play.google.com/store/apps/details?id=edu.mit.appinventor.aicompanion3"> o click aquí para ir a la página de descarga.</a>  Escaneas el código y se instala la aplicación. </p> 
+              <p class="parrafo_informacion">Abrimos la aplicación instalada y le damos al botón escanear, podreos visualizar una lista con los dispositivos a los que podremos conectarmos, seleccionamos nuestro Simblee y nos conectamos a él oprimiendo el botón conectar. Si la conexión se a realizado correctamente podremos observar como el boton "LED" cambia su color a verde. En este caso ya podemos usar los botones ON/OFF para encender y apagar nuestro Simblee con la App que hemos probado. Y ahora si undimos el botón para leer el estado del botón del Simblee mientras tenemos presionado el del Simblee podremos ver como nuestro valorcambia a 1 osea que está presionado (Nota: El estado solo se actualiza en nuestra app cuando presionamos el botón). </p>
+              <p class="parrafo_informacion">Ya has creado tu propia app con AppInventor para controlar un simblee ¡FELICITACIONES! </p>
+              <p class="parrafo_informacion"> Puedes descargar el sketch de arduino que realice directamente <a href="https://drive.google.com/file/d/0B3C4hPdiWOodaExoYVRGdFdzcWc/view?usp=sharing" target="_blank">dando click en este enlace</a>.</p>
+              <p class="parrafo_informacion"> Puedes descargar el programa de AppInventor que realice directamente <a href="https://drive.google.com/file/d/0B3C4hPdiWOodV3l4T0NVSklWSmc/view?usp=sharing" target="_blank">dando click en este enlace</a>.</p>
+
+              <p class="titulo_trabajo"> ¡¡¡¡¡¡¡¡EL RETOOOOOOOOOO!!!!!!!!!</p> 
+              <p class="parrafo_informacion">Para este reto lo que debes realizar es un dispositivo wereable que puedan utilizar las personas al dormir con su pareja. Un dispositivo que funcione como alarma y se pueda programar a la hora desaeada. Debes crear la aplicación para controlar el dispositivo.</p>
+              <p class="titulo_trabajo"> ¡Muchas Suerte!</p> 
+              <p class="parrafo_informacion">Si quieres ver nuestra aplicación descargala desde Google Play Store <a href="https://play.google.com/store/apps/details?id=appinventor.ai_juanito10997.AlarmaDeLuz" target="_blank"> dando click aquí</a>. </p> 
+              <p class="titulo_trabajo"> SOLUCION AL RETO.</p> 
+              <p class="parrafo_informacion"> Espero que hallas podido solucionar el reto. Visita nuestras redes sociales y has que todos conoscan la aplicación que hiciste.</p> 
+
+
+
+              <!--
+              <p></p>
+              <p class="parrafo_informacion">Puedes descargar la lista de chequeo <a href="" target="_blank"> dando click aquí</a>.</p> 
+              <p></p>
+               <p class="parrafo_informacion">Puedes descargar la AutoEvaluación <a href="https://drive.google.com/open?id=1QEGTFkHu5cRl_FxABvNCDOUM4yz1dKWk0kvj2lMEhSM" target="_blank"> dando click aquí</a>.</p>
+             -->
+
+
+                  
+          </li>                  
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <a href="https://twitter.com/vr_Experiences1" target="_blank">
+        <img src="../../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://www.facebook.com/vrExperienceStudio/" target="_blank">
+        <img src="../../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      </a>
+      <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A" target="_blank">
+        <img src="../../img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
+      </a>
+      <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa</p>
+    </footer>
+  </body>
+</html>
