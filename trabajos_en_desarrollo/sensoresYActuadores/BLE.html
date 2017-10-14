@@ -98,16 +98,16 @@
               <p class="titulo_trabajo"> SEGUNDO EJERCICIO CON SIMBLEE.</p>  
               <p class="parrafo_informacion">En este ejercicio vamos a aprender a comprobar los estados de los botones de nuestro RGB Shield RFD22122. Utilizaremos la misma aplicación movil que descargamos en el ejercicio anterior. Dentro del IDE Arduino vamos a Ejemplos - SimbleeBLE - LedButton. Conectamos nuestro Simblee y le cargamos el sketch (Nota: Recuerda seleccionar el puerto y el COM como lo hiciste en el ejercicio anterior) y conectamos nuestro Simblee a en la aplicación descargada.</p>
               <p class="parrafo_informacion">Una vez conectemos nuestra aplicación al dispositivo Simble le daremos clic en la opción "Unknown Service"   </p>
-              <img src="images/project_02_BLE/appLedButton1.jpg" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/InkedappLedButton1.jpg" alt="project_02_BLE" class="load_images2">
               <p class="parrafo_informacion">Despues de esto veremos una pantalla en la que se nos muestran todos los servicios que estan disponibles en este momento. En la parte que dice "Unknown Characteristic" vamos a oprimir dos veces el botón con las tres flechas hacia abajo tachadas, con el primer click se destachan y con el siguiente se vuelven a tachar, esto para que pueda recibir y captar la señal del botón pulsado.  </p>
               <img src="images/project_02_BLE/appLedButton2.jpg" alt="project_02_BLE" class="load_images2">
               <p class="parrafo_informacion">Si pulsamos nuestro botón podemos observar como en nuestra aplicación hay un (0x)01 en el value y cada vez que lo soltamos un (0x)00.</p>
-              <img src="images/project_02_BLE/appLedButton3.jpg" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/InkedappLedButton3.jpg" alt="project_02_BLE" class="load_images2">
               <p class="parrafo_informacion">Te debes estar preguntando ¿Cómo funciona esto? es simple la verdad. Entra en el siguiente enlace para que te des cuenta de las funciones que tiene y que es lo que hacen. <a href="https://www.simblee.com/Simblee%20Functions%20Reference%20V1.0.pdf" target="_blank"> click aquí para ir al documento.</a> </p>
               <p class="parrafo_informacion">Tambien podemos enviar datos desde la aplicación movil al Simblee si observamos bien hay otro servicio co nel nombre de Unknown Characteristic pero que en una parte que tiene dice: properties: WRITE, WRITE NO RESPONSE. En esta parte dando click en la fleha podremos enviarle un valor a nuestro Simblee.</p>
-              <img src="images/project_02_BLE/appLedButton4.jpg" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/InkedappLedButton4.jpg" alt="project_02_BLE" class="load_images2">
               <p class="parrafo_informacion">Si le enviamos un 01 a nuestro Simblee esto encenderá el Led y si por lo contrario usamos un 00 esto cambiará el estado del Led y lo apagará.</p>
-              <img src="images/project_02_BLE/appLedButton5.jpg" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/InkedappLedButton5.jpg" alt="project_02_BLE" class="load_images2">
 
               <p class="titulo_trabajo"> AHORA QUE YA CONOCEMOS LO BASICO VAMOS A CREAR NUESTRA PROPIA APP.</p>   
               <p class="parrafo_informacion"> Primero vamos a realizar unos pequeños cambios en nuestro sketch de arduino para que pueda funcionar a la perfección con la aplicación que vamos a hacer. Compara el ejemplo con las imagenes que te voy a mostrar y lo que no tengas igual cambialo.</p>
@@ -117,7 +117,7 @@
               <img src="images/project_02_BLE/MyAppSimblee4.PNG" alt="project_02_BLE" class="load_images2">
               <p class="parrafo_informacion"> Luego de hacer las modificaciones cargamos en nuestro Simblee el sketch.</p>
               <p class="parrafo_informacion"> Nuestra aplicación la vamos a crear con AppInventor. Los invito a que entren al siguiente enlace y sigan el tutorial <a href="http://iot.appinventor.mit.edu/assets/howtos/MIT_App_Inventor_Basic_Connection.pdf" target="_blank">click aquí para ir al tutorial</a>.</p>
-              <p>En este enlace podran encontrar todas las propiedades de Simblee en AppInventor <a href="http://iot.appinventor.mit.edu/#/bluetoothle/bluetoothleintro">Cliack aquí para ingresar</a>.</p>
+              <p class="parrafo_informacion">En este enlace podran encontrar todas las propiedades de Simblee en AppInventor <a href="http://iot.appinventor.mit.edu/#/bluetoothle/bluetoothleintro">Cliack aquí para ingresar</a>.</p>
               <p class="parrafo_informacion"> Para poder leer el estado del botón necesitamos agregar unas pequeñas cosas en lo anterior. Acá les dejo los pantalolazos para que lo completen. </p>
               <p class="parrafo_informacion">Lo quedebemos hacer es agregar un Layout para almacenar un Botón y un Label; el botón se encargará de hacer la lectura del estado del botón del Simblee y en el Layout se imprimirá el valor recibido.</p>
               <img src="images/project_02_BLE/MyAppSimbleeConBoton.PNG" alt="project_02_BLE" class="load_images2">
