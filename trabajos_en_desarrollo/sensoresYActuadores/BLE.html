@@ -136,8 +136,25 @@
               <p class="parrafo_informacion">Si quieres ver nuestra aplicación descargala desde Google Play Store <a href="https://play.google.com/store/apps/details?id=appinventor.ai_juanito10997.AlarmaDeLuz" target="_blank"> dando click aquí</a>. </p> 
               <p class="titulo_trabajo"> SOLUCION AL RETO.</p> 
               <p class="parrafo_informacion"> Espero que hallas podido solucionar el reto. Visita nuestras redes sociales y has que todos conoscan la aplicación que hiciste.</p> 
-
-
+              <p class="parrafo_informacion"> Para esta solución utilizamos como base la desarrollada anteriormente para prender y apagar el led del simble. Lo unico que le agregamos fue un Clock que lo podremos encontrar en la parte de sensores  un Notifier que lo podremos encontrar en la pate de User Interface.  </p> 
+              <img src="images/project_02_BLE/clock.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/notifier.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> En la pestaña de diseño agregamos unos Text box para agregar la hora y los minutos en la que queremos establecer la alarma, un label para separarlos con unos ":" y un boton para establecer la hora. Esto lo puedes agregar en Arragements a tu gusto. Yo le agregué otras cosita pero ya veremos para que son.</p> 
+              <img src="images/project_02_BLE/alarmaDiseño.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> En la pestaña de bloques seleccionamos la opcion cuando demos click en el boton que acabamos de crear. y en este creamos uns variables globales que tomaran los valores de la hora y los minutos; uno para la hora y otro para los minutos y llamaremos al notifier para que muestre una alerta con un pequeño mensaje "Hora configurada a" y le agregamos los valores de la hora y los minutos que el usuaio asignará.</p> 
+              <img src="images/project_02_BLE/inicializarVariables.PNG" alt="project_02_BLE" class="load_images2">
+              <img src="images/project_02_BLE/establecerAlarma.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Ahora con el Clock utilizamos el timer para acceder a la hora y los minutos de nuestro telefono los cuales los estoy mostrando en los label que coloqué en la parte de abajo (Esto lo hice solo para probar). Comparamos con un AND si la hora establecida por el usuario y la hora de nuestro celular son iguales y si esto es corecto enviamos una notificación que nos mostrará el mensaje en pantalla y enviará al Simblee la opción de encendido.</p> 
+              <img src="images/project_02_BLE/clockTimer.PNG" alt="project_02_BLE" class="load_images2">
+              <p class="parrafo_informacion"> Y esto es todo, nuestra aplicación ya está funcionando ¡¡FELICITACIONES!!</p> 
+              <p class="parrafo_informacion"> Mira el video de nuestra App funcionando.</p>
+              <center><iframe height="100%" width="50%" src="https://www.youtube.com/embed/7SIoEHxg9k8" frameborder="0" allowfullscreen></iframe></center>
+              <p class="titulo_trabajo"> Valor agregado:</p> 
+              <p class="parrafo_informacion"> Tambien podemos hacer que nuestro celular suene como cualquier otra de las alarmas de nuestro telefono. Para esto debes agregar esta librería. <a href="https://drive.google.com/file/d/0B3C4hPdiWOodNDhIWUVJQ2VVVDg/view?usp=sharing" target="_blank">click aquí para ir a descargar.</a> </p> 
+               <p class="titulo_trabajo"> Esta librería lo que hace es que nos permite conectarnos a la alarma de nuestro telefono y establecerle como si fuera una alarma normal la que nosotros le hemos agregado en nuestra aplicación. Como pudieron observar nuestra aplicación tiene un CheckList, con este pedimos al usuario si quiere que la alarma suene o no, y siesta respuesta es positiva comprovamos que las horas y minutos que el usuario ingrese sean en el rango que deberían ser : entre 0 y 24 horas y entre 0 y 60 minutos. Luego de esto utilizamos el set de nuestra librería para establecer la hora y mostramos la alerta de alarma configurada.</p> 
+               <img src="images/project_02_BLE/checListSonar.PNG" alt="project_02_BLE" class="load_images2">
+               <p class="titulo_trabajo"> ESTO ES TODO NUESTRO TUTRIAL. ¡¡GRACIAS POR HABER APRENDIDO CON NOSOTROS!!</p> 
+               
 
               <!--
               <p></p>
@@ -145,7 +162,6 @@
               <p></p>
                <p class="parrafo_informacion">Puedes descargar la AutoEvaluación <a href="https://drive.google.com/open?id=1QEGTFkHu5cRl_FxABvNCDOUM4yz1dKWk0kvj2lMEhSM" target="_blank"> dando click aquí</a>.</p>
              -->
-
 
                   
           </li>                  
