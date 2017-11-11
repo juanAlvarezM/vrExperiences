@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vrExperienceStudio </title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html" id="logo">
+        <h1>VR-ExperienceStudio</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../portafolio.html" class="selected">Portafolio</a></li>
+          <li><a href="../../acerca.html">Acerca de</a></li>
+          <li><a href="../../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <section>
+        <ul id="parrafo_descripción">
+          <li>
+              <img src="images/project_arduino.png" alt="project_06" class="load_images">
+              <p class="titulo_trabajo"> Arduino Under The Hood. </p>
+              <p class="parrafo_informacion">Todo este proyecto se realizó para trabajo en clase de Controladores a finales del curso para el pregrado de Ingeniería en Diseño de Entretenimiento Digital.</p>
+              <p class="parrafo_informacion">Puedes descargar la carpeta con los resultados finales de esta parte <a href="" target="_blank"> dando click aquí</a>.</p>
+
+              <p class="titulo_trabajo"> EJERCICIO 1: MICROCONTROLADOR + PROGRAMADOR. </p>
+              <img src="images/project_arduinoUnderTheHood/protoboard1.PNG" alt="project_06" class="load_images2">
+              <img src="images/project_arduinoUnderTheHood/protoboard1.PNG" alt="project_06" class="load_images2">
+
+              <P class="parrafo_informacion">Se realizó el montaje mostrado en el circuito anterior. Al tener el circuito conectado se abrió el ejemplo ArduinoISP (In-System programing) para programa la targeta de arduino como una interfaz de programación. Para esto necesitamos descomentar del ejemplo anterior la linea de código #define USE_OLD_STYLE_WIRING y se programa en la targeta. Luego se realizó un programa en el que se enciende y apaga un led conectado a D2 (este puerto podemos encontrarlo en el plano del arduino UNO R3) y se cargó el archivo al microcontrolador de la protoboard utilizando Using Programmer del menú sketch del IDE de Arduino. </P> 
+
+              <p class="titulo_trabajo"> EJERCICIO 2: PROGRAMAR EL BOOTLOADER DE ARDUINO. </p>
+              <img src="images/project_arduinoUnderTheHood/protoboard3.PNG" alt="project_06" class="load_images2">
+              <P class="parrafo_informacion">Para programar el Bootloader debemos asegurarnos que nuestro arduino cuenta con el Programa ArduinoISP y en el menú Tools seleccionamos la opción de Burn Bootloader.</P> 
+              <p class="parrafo_informacion">Después de esto utilizamos una placa de arduino para comunicarnos directamente con el Bootloader. Muchos se preguntarán ¿Cómo hago esto? Pues muy sencillo lo que tienes que hacer es revisar de nuevo el plano de Arduino R3 y analizar un rato su conexión.</p>
+              <p class="parrafo_informacion"> Analizando el plano podremos darnos cuenta de que la comunicación se hace entre los pines Rx, Tx y Reset del arduino, a los puertos PD0, PD1 y PC6 respectivamente y listo, ahora podemos cargar el sketch a nuestro microcontrolador utilizando el botón de carga del IDE Arduino, no el Using Programmer del menú sketch.</p>
+              <p class="titulo_trabajo"> EJERCICIO 3: EXPLORANDO LA CARPETA ARDUINO. </p>
+              <p class="parrafo_informacion"> En esta parte de trabajo conocimos un poco sobre todo lo que compone la carpeta arduino.</p>
+              <p class="parrafo_informacion"> ¿Qué contiene la carpeta drivers? ¿Para qué sirve?</p>
+              <p class="parrafo_informacion">R. Los drivers son para poder hablarle al sistema operativo, son los que se encargan de que este sepa como se le está hablando. </p>
+              <p class="parrafo_informacion"> ¿Qué contiene la carpeta examples y cuál es la relación con los ejemplos del IDE de arduino.</p>
+              <p class="parrafo_informacion">R. La carpeta examplescontiene los ejemplos principales de las funcionalidades de arduino.</p>
+              <p class="parrafo_informacion"> ¿Qué contiene la carpeta libraries?</p>
+              <p class="parrafo_informacion">R. La carpeta libraries son todas las librerias. Estas son lasque salen debajo de los ejemplos que podemos ver en el IDE de Arduino.</p> 
+              <p class="parrafo_informacion">Abra la carpeta hardware/arduino/avr/cores/arduino ¿Qué contiene esta carpeta? </p>
+              <p class="parrafo_informacion">R. Esta carpeta contiene todo el frameWork o codigo fuente de arduino.</p>
+              <p class="titulo_trabajo">RETO </p>
+              <p class="parrafo_informacion">- Busque el archivo main.cpp.</p>
+              <p class="parrafo_informacion">-Modifique este archivo de tal manera que antes y después de llamar la función loop se envíe por serial el valor de la función millis().</p>
+              <img src="images/project_arduinoUnderTheHood/cambiandoMain.PNG" alt="project_06" class="load_images2">
+              <p class="parrafo_informacion">- Salve el archivo main.cpp con los cambios.</p>
+              <p class="parrafo_informacion">- Abra el IDE de arduino y cargue el ejemplo Blink.</p>
+              <p class="parrafo_informacion">- Abra la consola.</p>
+              <p class="parrafo_informacion">- ¿Qué se puede concluir?</p>
+              <img src="images/project_arduinoUnderTheHood/cambiarMain.jpeg" alt="project_06" class="load_images2">
+              <p class="parrafo_informacion">A esto se puede concluir que acabamos de modificar las funcionalidades de arduino. Ya que emos editado su codigo fuente podemos utilizarlo para hacer que funcione como nosotros queramos. </p>
+              <p class="titulo_trabajo"> EJERCICIO 5: INTERRUPCIONES. </p>
+              <P class="parrafo_informacion"> IMPLEMENTE un programa que prenda y apague un LED a 1Hz utilizando interrupciones.</P>
+              <img src="images/project_arduinoUnderTheHood/ejercicio5.PNG" alt="project_06" class="load_images2">
+              <p class="titulo_trabajo"> PROYECTO EN ATMEL STUDIO 7</p>
+              <P class="parrafo_informacion">Puedes encontrar la carpeta con este ejercicio en la parte superior de la página donde estan todos los archivos desarrollados en este ejercicio.</P>
+              <p class="titulo_trabajo"> CALCULADORA SERIAL CON TIMEOUT</p>
+              <p class="parrafo_informacion"> Utilizando interrupciones implementa una calculadora que:</p>
+              <p class="parrafo_informacion">- Pida ingresar la operación: +, - *, /, %.</p>
+              <p class="parrafo_informacion">- Pida los operandos.</p>
+              <p class="parrafo_informacion">- Si el ingreso de cualquiera de los operandos tarda más de 5 segundos, aborta la operación. (Los tiempos deben medirse utilizando interrupciones).</p>
+              
+
+
+              <!-- <p class="parrafo_informacion">Puedes descargar la lista de chequeo <a href="https://docs.google.com/spreadsheets/d/1TBfiysc4oW63a3ZgrS-nNA6t6DJu6QpOS4jN9zepkSg/edit?usp=sharing" target="_blank"> dando click aquí</a>.</p>
+              <p></p>
+               <p class="parrafo_informacion">Puedes descargar la AutoEvaluación <a href="https://docs.google.com/spreadsheets/d/1hSsocBuzFmN0zZNOpnHkYJ75-6820UkhqFk1Ti8uG_8/edit?usp=sharing" target="_blank"> dando click aquí</a>.</p>
+             -->
+          </li>                  
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <a href="https://twitter.com/vr_Experiences1" target="_blank">
+        <img src="../../img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://www.facebook.com/vrExperienceStudio/" target="_blank">
+        <img src="../../img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      </a>
+      <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A" target="_blank">
+        <img src="../../img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
+      </a>
+      <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa</p>
+    </footer>
+  </body>
+</html>
