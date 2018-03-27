@@ -1,122 +1,194 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vrExperienceStudio </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>vrExperienceStudio</title>
 
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1 class="selected">VR-ExperienceStudio</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="portafolio.html" >Portafolio</a></li>
-          <li><a href="acerca.html">Acerca de</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <!-- Esto produce Error  <link rel="stylesheet" href="css/main.css">  -->
+  <!-- Esto produce Error  <link rel="stylesheet" href="css/responsive.css"> -->
 
-    <section id="texto_inicio">
-      <div class="texto_inicio_principal">
-        <h2>All-SensExperience.</h2>
-        <p>Entretenimiento</p>
-        <p>Tecnología</p>
-        <p>Educación</p>
-        <div id="imagen_inicio">
-          <a href="img/portada.jpg">
-          <img id="foto_inicio" frameborder="0"  src="img/portada.jpg" style=" opacity: .25;">
-        </a>
+</head>
+<body>
+  <nav class="teal darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">VR-ExperienceStudio</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">All-SensExperience</h1>
+        <div class="row center">
+          <h5  class="header col s12 light" >Entretenimiento</h5>
+          <h5 class="header col s12 light">Tecnología</h5>
+          <h5 class="header col s12 light">Educación</h5>
+        </div>
+        <!--
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        -->
+        <br><br>
+        
+      </div>
+    </div>
+    <div class="parallax"><img src="img/portada.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center teal-text"><i class="material-icons">sentiment_very_satisfied</i></h2>
+            <h5 class="center subtitulo">Entretenimiento</h5>
+
+            <p class="light">Contamos con la capacidad de desarrollo de contenidos digitales orientados al entretenimiento, así como participar en proyectos de desarrollo con equipos interdisciplinarios, tanto en roles técnicos como de creatividad y de gestión de proyectos.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center teal-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center subtitulo">Tecnología</h5>
+
+            <p class="light">Ingeniería, en diseño y en procesos de producción de contenidos audiovisuales e interactivos que te ayudarán a brindar a tus usuarios una mejor experiencia, combinando sus sentidos con los nuevos desarrollos tecnológicos.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center teal-text"><i class="material-icons">school</i></h2>
+            <h5 class="center subtitulo">Educación</h5>
+
+            <p class="light">Sabemos que incorporar la tecnología a la educación aporta beneficios que ayudan a mejorar la eficiencia, la productividad y el interés en las actividades académicas, nos enfocamos en diseñar espacios de aprendizaje en el que nuestros usuarios puedan aprender, disfrutar y divertirse a cada instante.</p>
+          </div>
         </div>
       </div>
-    </section>
 
-     
-
-    <section>
-
-        <ul id="parrafo_descripción">
-          <li>
-            <a href="">
-              <p class="titulo_trabajo"> NOTICIAS. </p>
-              <p></p>
-              <p class="parrafo_informacion">Sigue cada una de las interesantes publicaciones de nuestras redes sociales, aquí tienes una muestra, que la disfrutes. </p>
-              <p></p>
-              <a class="twitter-timeline" data-height="1000" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/vr_Experiences1">Tweets by vr_Experiences1</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </a>
-          </li>        
-        </ul>
-
-        <ul id="parrafo_descripción">
-          <li>
-            <a href="trabajos_en_desarrollo/sensoresYActuadores/BLE.html">
-              <p class="titulo_trabajo"> Tutorial Simblee (BLE). </p>
-              <p class="parrafo_informacion"> Hemos creado para tí un pequeño tutorial para que puedas divertirte y asombrar a tus compañeros con este funcional dispositivo. </p>
-              <img src="trabajos_en_desarrollo/sensoresYActuadores/images/project_02_BLE/alarmLogoapp.png" class="load_images2" width=25% height=25%>
-              <p></p>
-            </a>
-          </li>        
-        </ul>
-
-        
-      </section> 
-
-
-   <!-- <div id="wrapper">
-      <section>
-        <ul id="gallery">
-          <li>
-            <a href="img/coding-01.jpg">
-              <img src="img/coding-01.jpg" alt="Proyectos con JavaScript">
-              <p>Proyectos con JavaScript</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/coding-02.jpg">
-              <img src="img/coding-02.jpg" alt="Proyectos con HTML">
-              <p>Proyectos con HTML</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/coding-06.jpg">
-              <img src="img/coding-06.jpg" alt="Plantillas Web">
-              <p>Plantillas Web</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/coding-09.jpg">
-              <img src="img/coding-09.jpg" alt="Flujo de trabajo">
-              <p>Flujo de trabajo</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/coding-12.jpg">
-              <img src="img/coding-12.jpg" alt="Diseño">
-              <p>Diseño</p>
-            </a>
-          </li>
-        </ul>
-      </section>
     </div>
-    -->
-    <footer>
-      <a href="https://twitter.com/vr_Experiences1" target="_blank">
-        <img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-      <a href="https://www.facebook.com/vrExperienceStudio/" target="_blank">
-        <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-      </a>
-      <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A" target="_blank">
-        <img src="img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
-      </a>
-      <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa</p>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Conoce a los nuevos Ingenieros en Diseño de Entretenimiento Digital </h5>
+          <h5 class="header col s12 light">y sus habilidades.</h5>
+        </div>
+        <div class="row center">
+          <a href="acerca.html" class="btn-large waves-effect waves-light teal lighten-1">Conócenos</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contáctanos</h4>
+          <p class="left-align light">Somos una compañía dedicada a la realización de contenidos enfocados a la inmersión, percepción y recordación del usuario. Desde la creación de ambientes físicos donde se pueda generar un ambiente salido de lo común hasta simulaciones con Realidad Virtual tanto para muestras y visualización, como para ocio y entretenimiento. VRExperienceStudio nace con la meta de mostrar al mundo las extraordinarias cosas que se pueden lograr cuando mezclas la ingeniería con el diseño y lo centras en una única finalidad ¡El diseño de Experiencias! </p>
+        </div>
+
+        <div class="row center">
+          <a href="contacto.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Escríbenos</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Observa lo que hacemos, piensa en una idea que quieras realizar y contáctanos.</h5>
+        </div>
+         <div class="row center">
+          <a href="portafolio.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Portafolio</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+<!--
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      </div>
+    </div>
     </footer>
+
+  -->
+    <footer class ="black">
+      <a href="https://twitter.com/vr_Experiences1" target="_blank">
+          <img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="https://www.facebook.com/vrExperienceStudio/" target="_blank">
+          <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="https://www.youtube.com/channel/UCfl2TydJb-yX669KNFGuZ4A" target="_blank">
+          <img src="img/youtube-wrap.png" alt="Youtube Logo" class="social-icon"></a>
+        <p>&copy; vrExperienceStudio | DESIGN: Juan Esteban Álvarez Mesa with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a></p>
+    </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
   </body>
 </html>
